@@ -76,5 +76,3 @@ Keys stay in local ignored files or encrypted Cloudflare secrets. No provider ke
 The full portfolio PDF and CV are linked from the live website, not stored in this public repository or its history.
 
 Portfolio images, client marks and source documents retain their respective rights; this is not a reusable asset library. See [rights and attribution](LICENSE.md), [asset provenance](docs/assets.md) and [third-party notices](THIRD_PARTY_NOTICES.md). Security limitations and reporting are in [SECURITY.md](SECURITY.md).
-
-This repo is temporarily hosted under **Warfuse** pending transfer to my own GitHub account. [The handover guide](docs/ownership-transfer.md) separates repository ownership from the live hosting account, domain and API billing.
