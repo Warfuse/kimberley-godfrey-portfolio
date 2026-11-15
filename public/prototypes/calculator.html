@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Express Capital — Interactive calculator concept</title>
+    <link rel="stylesheet" href="lab.css" />
+    <script type="module" src="calculator.js"></script>
+  </head>
+  <body>
+    <header class="lab-top">
+      <a target="_top" href="../index.html#project-capital">← My portfolio</a
+      ><span class="tag">Express Capital Financing / Interactive concept</span>
+    </header>
+    <div class="demo-notice">
+      I built this working portfolio prototype from my pitched design.
+      Illustrative assumptions; not a loan quote or the lender’s production
+      calculator.
+    </div>
+    <main class="wrap">
+      <div class="calc-heading">
+        <div>
+          <p class="eyebrow">THE NUMBERS, WITH THE WHY</p>
+          <h1>Is this your next good deal?</h1>
+          <p class="subtle">
+            Change the inputs. See the whole picture, instantly.
+          </p>
+        </div>
+        <button id="reset">↺ Reset calculator</button>
+      </div>
+      <div class="toolbar" aria-label="Example scenarios">
+        <span class="subtle">Take a scenario for a spin:</span
+        ><button data-scenario="base">Base deal</button
+        ><button data-scenario="optimistic">Higher resale</button
+        ><button data-scenario="stress">Cost overrun</button>
+      </div>
+      <div class="calc-layout">
+        <form id="calculator" novalidate>
+          <details class="step" open>
+            <summary>
+              01 / The deal <small>Purchase, renovation & resale</small>
+            </summary>
+            <div class="fields" id="deal-fields"></div>
+          </details>
+          <details class="step">
+            <summary>
+              02 / Financing <small>Leverage & loan terms</small>
+            </summary>
+            <div class="fields" id="finance-fields"></div>
+          </details>
+          <details class="step">
+            <summary>
+              03 / Costs & fees <small>Acquisition, holding & sale</small>
+            </summary>
+            <div class="fields" id="fee-fields"></div>
+          </details>
+          <p class="error" id="input-error" role="alert"></p>
+        </form>
+        <aside id="deal-results" class="results" aria-label="Deal results">
+          <div class="result-head">
+            <span class="live-dot">● UPDATES AS YOU TYPE</span>
+            <div class="stats">
+              <div>
+                <small>PROJECTED PROFIT / LOSS</small
+                ><strong id="profit">—</strong>
+              </div>
+              <div>
+                <small>CASH-ON-CASH ROI</small><strong id="roi">—</strong>
+              </div>
+            </div>
+          </div>
+          <div class="result-body">
+            <div class="cost-bar" aria-hidden="true">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <div class="legend">
+              <span>■ Purchase</span><span>■ Renovation</span
+              ><span>■ Costs</span><span>■ Profit (if any)</span>
+            </div>
+            <div class="health" id="health" data-tier="good">Good deal</div>
+            <p id="verdict" aria-live="polite"></p>
+            <div class="breakdown" id="breakdown"></div>
+            <details>
+              <summary>Show the maths & assumptions</summary>
+              <div class="assumptions">
+                <p>
+                  Purchase loan = purchase × purchase LTV. Renovation loan =
+                  renovation × rehab LTV. Interest = total loan × annual rate ×
+                  months ÷ 12. Full renovation loan is assumed drawn from day
+                  one; no compounding.
+                </p>
+                <p>
+                  Origination points apply to the whole loan. Mortgage tax
+                  applies to the loan; title and transfer tax apply to purchase.
+                  Broker fee applies to resale. Holding costs = monthly property
+                  costs × months. Other costs are a fixed amount.
+                </p>
+                <p>
+                  Project cost = purchase + renovation + all modelled fees and
+                  holding costs. Profit = resale − project cost. Cash required =
+                  project cost − loan. Cash-on-cash ROI = profit ÷ cash
+                  required. This simplified cash figure includes selling costs
+                  and is not a draw schedule.
+                </p>
+                <p>
+                  Demo thresholds: Losing = loss; Weak = nonnegative profit and
+                  ROI below 10%; Good = 10–19.99%; Strong = 20%+. These are
+                  portfolio-demo choices, not lender-approved thresholds.
+                  “Unrated” means zero cash denominator.
+                </p>
+                <p>
+                  Excludes income/capital-gains tax, draw timing, extension
+                  fees, prepayment penalties and unentered costs. This model is
+                  not financial advice.
+                </p>
+              </div>
+            </details>
+            <div class="toolbar">
+              <button class="primary" id="save">Save comparison</button
+              ><button id="download">Download snapshot ↓</button>
+            </div>
+            <div id="snapshot" class="snapshot" aria-live="polite"></div>
+          </div>
+        </aside>
+      </div>
+    </main>
+    <div class="mobile-results">
+      <div aria-hidden="true">
+        <small>PROJECTED PROFIT</small><strong id="mobile-profit">—</strong>
+      </div>
+      <div aria-hidden="true">
+        <small>CASH-ON-CASH</small><strong id="mobile-roi">—</strong>
+      </div>
+      <a href="#deal-results">Results ↓</a>
+    </div>
+  </body>
+</html>

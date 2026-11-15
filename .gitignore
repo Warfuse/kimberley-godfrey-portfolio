@@ -1,0 +1,19 @@
+node_modules/
+.wrangler/
+.dev.vars
+.dev.vars.*
+!.dev.vars.example
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.log
+.DS_Store
+coverage/
+artifacts/
+wrangler.production.jsonc
+
+# Full source documents stay on the live website, outside the public repo.
+public/assets/portfolio-source.pdf
+public/assets/Kimberley-Godfrey-CV.pdf

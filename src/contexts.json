@@ -1,0 +1,830 @@
+{
+  "overnight:summary": {
+    "synthetic": true,
+    "urgent": false,
+    "question": "Summarise the available blood-pressure pattern and uncertainty.",
+    "facts": {
+      "period": "15 Oct\u201311 Nov 2026",
+      "day_average_sbp": 134,
+      "day_average_dbp": 81.9,
+      "night_average_sbp": 143,
+      "night_average_dbp": 87.1,
+      "previous_week_night_average_sbp": 128,
+      "recent_nights_with_data": 7,
+      "total_nights": 7,
+      "night_samples": 28,
+      "sleep_window_source": "23:00\u201307:00 (fictional diary)",
+      "clinical_interpretation": "Not validated. These are fictional patterns, not diagnoses.",
+      "night_sbp_week_change": 15
+    },
+    "coverage_sufficient_for_demo": true,
+    "activity": null,
+    "approved_lifestyle_suggestions": [
+      "If comfortable and in line with existing clinician advice, consider a small, achievable movement break. Do not suggest activity in response to urgent symptoms.",
+      "Discuss a suitable activity plan and other lifestyle options with your healthcare professional.",
+      "Keep a simple diary of sleep times, symptoms and relevant context to discuss alongside the readings."
+    ],
+    "limitations": [
+      "No diagnosis, treatment recommendation or causal link can be established from this demo.",
+      "Heart-rate peaks are not an activity measure; Hilo resting readings cannot establish exercise behaviour.",
+      "The sleep window is a fictional diary entry, not inferred sleep staging.",
+      "Wearable patterns may need confirmation with a clinician; do not change medicines based on this summary."
+    ]
+  },
+  "overnight:gp": {
+    "synthetic": true,
+    "urgent": false,
+    "question": "Help prepare questions for a GP about the recorded pattern.",
+    "facts": {
+      "period": "15 Oct\u201311 Nov 2026",
+      "day_average_sbp": 134,
+      "day_average_dbp": 81.9,
+      "night_average_sbp": 143,
+      "night_average_dbp": 87.1,
+      "previous_week_night_average_sbp": 128,
+      "recent_nights_with_data": 7,
+      "total_nights": 7,
+      "night_samples": 28,
+      "sleep_window_source": "23:00\u201307:00 (fictional diary)",
+      "clinical_interpretation": "Not validated. These are fictional patterns, not diagnoses.",
+      "night_sbp_week_change": 15
+    },
+    "coverage_sufficient_for_demo": true,
+    "activity": null,
+    "approved_lifestyle_suggestions": [
+      "If comfortable and in line with existing clinician advice, consider a small, achievable movement break. Do not suggest activity in response to urgent symptoms.",
+      "Discuss a suitable activity plan and other lifestyle options with your healthcare professional.",
+      "Keep a simple diary of sleep times, symptoms and relevant context to discuss alongside the readings."
+    ],
+    "limitations": [
+      "No diagnosis, treatment recommendation or causal link can be established from this demo.",
+      "Heart-rate peaks are not an activity measure; Hilo resting readings cannot establish exercise behaviour.",
+      "The sleep window is a fictional diary entry, not inferred sleep staging.",
+      "Wearable patterns may need confirmation with a clinician; do not change medicines based on this summary."
+    ]
+  },
+  "overnight:lifestyle": {
+    "synthetic": true,
+    "urgent": false,
+    "question": "Offer cautious general lifestyle ideas, using activity context only if explicitly available.",
+    "facts": {
+      "period": "15 Oct\u201311 Nov 2026",
+      "day_average_sbp": 134,
+      "day_average_dbp": 81.9,
+      "night_average_sbp": 143,
+      "night_average_dbp": 87.1,
+      "previous_week_night_average_sbp": 128,
+      "recent_nights_with_data": 7,
+      "total_nights": 7,
+      "night_samples": 28,
+      "sleep_window_source": "23:00\u201307:00 (fictional diary)",
+      "clinical_interpretation": "Not validated. These are fictional patterns, not diagnoses.",
+      "night_sbp_week_change": 15
+    },
+    "coverage_sufficient_for_demo": true,
+    "activity": null,
+    "approved_lifestyle_suggestions": [
+      "If comfortable and in line with existing clinician advice, consider a small, achievable movement break. Do not suggest activity in response to urgent symptoms.",
+      "Discuss a suitable activity plan and other lifestyle options with your healthcare professional.",
+      "Keep a simple diary of sleep times, symptoms and relevant context to discuss alongside the readings."
+    ],
+    "limitations": [
+      "No diagnosis, treatment recommendation or causal link can be established from this demo.",
+      "Heart-rate peaks are not an activity measure; Hilo resting readings cannot establish exercise behaviour.",
+      "The sleep window is a fictional diary entry, not inferred sleep staging.",
+      "Wearable patterns may need confirmation with a clinician; do not change medicines based on this summary."
+    ]
+  },
+  "overnight:summary-activity": {
+    "synthetic": true,
+    "urgent": false,
+    "question": "Summarise the available blood-pressure pattern and uncertainty.",
+    "facts": {
+      "period": "15 Oct\u201311 Nov 2026",
+      "day_average_sbp": 134,
+      "day_average_dbp": 81.9,
+      "night_average_sbp": 143,
+      "night_average_dbp": 87.1,
+      "previous_week_night_average_sbp": 128,
+      "recent_nights_with_data": 7,
+      "total_nights": 7,
+      "night_samples": 28,
+      "sleep_window_source": "23:00\u201307:00 (fictional diary)",
+      "clinical_interpretation": "Not validated. These are fictional patterns, not diagnoses.",
+      "night_sbp_week_change": 15
+    },
+    "coverage_sufficient_for_demo": true,
+    "activity": {
+      "source": "Simulated connected activity feed; not inferred from resting heart rate.",
+      "recent_daily_steps": 6170,
+      "previous_daily_steps": 6175,
+      "recent_daily_active_minutes": 31
+    },
+    "approved_lifestyle_suggestions": [
+      "If comfortable and in line with existing clinician advice, consider a small, achievable movement break. Do not suggest activity in response to urgent symptoms.",
+      "Discuss a suitable activity plan and other lifestyle options with your healthcare professional.",
+      "Keep a simple diary of sleep times, symptoms and relevant context to discuss alongside the readings."
+    ],
+    "limitations": [
+      "No diagnosis, treatment recommendation or causal link can be established from this demo.",
+      "Heart-rate peaks are not an activity measure; Hilo resting readings cannot establish exercise behaviour.",
+      "The sleep window is a fictional diary entry, not inferred sleep staging.",
+      "Wearable patterns may need confirmation with a clinician; do not change medicines based on this summary."
+    ]
+  },
+  "overnight:gp-activity": {
+    "synthetic": true,
+    "urgent": false,
+    "question": "Help prepare questions for a GP about the recorded pattern.",
+    "facts": {
+      "period": "15 Oct\u201311 Nov 2026",
+      "day_average_sbp": 134,
+      "day_average_dbp": 81.9,
+      "night_average_sbp": 143,
+      "night_average_dbp": 87.1,
+      "previous_week_night_average_sbp": 128,
+      "recent_nights_with_data": 7,
+      "total_nights": 7,
+      "night_samples": 28,
+      "sleep_window_source": "23:00\u201307:00 (fictional diary)",
+      "clinical_interpretation": "Not validated. These are fictional patterns, not diagnoses.",
+      "night_sbp_week_change": 15
+    },
+    "coverage_sufficient_for_demo": true,
+    "activity": {
+      "source": "Simulated connected activity feed; not inferred from resting heart rate.",
+      "recent_daily_steps": 6170,
+      "previous_daily_steps": 6175,
+      "recent_daily_active_minutes": 31
+    },
+    "approved_lifestyle_suggestions": [
+      "If comfortable and in line with existing clinician advice, consider a small, achievable movement break. Do not suggest activity in response to urgent symptoms.",
+      "Discuss a suitable activity plan and other lifestyle options with your healthcare professional.",
+      "Keep a simple diary of sleep times, symptoms and relevant context to discuss alongside the readings."
+    ],
+    "limitations": [
+      "No diagnosis, treatment recommendation or causal link can be established from this demo.",
+      "Heart-rate peaks are not an activity measure; Hilo resting readings cannot establish exercise behaviour.",
+      "The sleep window is a fictional diary entry, not inferred sleep staging.",
+      "Wearable patterns may need confirmation with a clinician; do not change medicines based on this summary."
+    ]
+  },
+  "overnight:lifestyle-activity": {
+    "synthetic": true,
+    "urgent": false,
+    "question": "Offer cautious general lifestyle ideas, using activity context only if explicitly available.",
+    "facts": {
+      "period": "15 Oct\u201311 Nov 2026",
+      "day_average_sbp": 134,
+      "day_average_dbp": 81.9,
+      "night_average_sbp": 143,
+      "night_average_dbp": 87.1,
+      "previous_week_night_average_sbp": 128,
+      "recent_nights_with_data": 7,
+      "total_nights": 7,
+      "night_samples": 28,
+      "sleep_window_source": "23:00\u201307:00 (fictional diary)",
+      "clinical_interpretation": "Not validated. These are fictional patterns, not diagnoses.",
+      "night_sbp_week_change": 15
+    },
+    "coverage_sufficient_for_demo": true,
+    "activity": {
+      "source": "Simulated connected activity feed; not inferred from resting heart rate.",
+      "recent_daily_steps": 6170,
+      "previous_daily_steps": 6175,
+      "recent_daily_active_minutes": 31
+    },
+    "approved_lifestyle_suggestions": [
+      "If comfortable and in line with existing clinician advice, consider a small, achievable movement break. Do not suggest activity in response to urgent symptoms.",
+      "Discuss a suitable activity plan and other lifestyle options with your healthcare professional.",
+      "Keep a simple diary of sleep times, symptoms and relevant context to discuss alongside the readings."
+    ],
+    "limitations": [
+      "No diagnosis, treatment recommendation or causal link can be established from this demo.",
+      "Heart-rate peaks are not an activity measure; Hilo resting readings cannot establish exercise behaviour.",
+      "The sleep window is a fictional diary entry, not inferred sleep staging.",
+      "Wearable patterns may need confirmation with a clinician; do not change medicines based on this summary."
+    ]
+  },
+  "quiet-week:summary": {
+    "synthetic": true,
+    "urgent": false,
+    "question": "Summarise the available blood-pressure pattern and uncertainty.",
+    "facts": {
+      "period": "15 Oct\u201311 Nov 2026",
+      "day_average_sbp": 136,
+      "day_average_dbp": 82.9,
+      "night_average_sbp": 128,
+      "night_average_dbp": 78,
+      "previous_week_night_average_sbp": 128,
+      "recent_nights_with_data": 7,
+      "total_nights": 7,
+      "night_samples": 28,
+      "sleep_window_source": "23:00\u201307:00 (fictional diary)",
+      "clinical_interpretation": "Not validated. These are fictional patterns, not diagnoses.",
+      "night_sbp_week_change": 0
+    },
+    "coverage_sufficient_for_demo": true,
+    "activity": null,
+    "approved_lifestyle_suggestions": [
+      "If comfortable and in line with existing clinician advice, consider a small, achievable movement break. Do not suggest activity in response to urgent symptoms.",
+      "Discuss a suitable activity plan and other lifestyle options with your healthcare professional.",
+      "Keep a simple diary of sleep times, symptoms and relevant context to discuss alongside the readings."
+    ],
+    "limitations": [
+      "No diagnosis, treatment recommendation or causal link can be established from this demo.",
+      "Heart-rate peaks are not an activity measure; Hilo resting readings cannot establish exercise behaviour.",
+      "The sleep window is a fictional diary entry, not inferred sleep staging.",
+      "Wearable patterns may need confirmation with a clinician; do not change medicines based on this summary."
+    ]
+  },
+  "quiet-week:gp": {
+    "synthetic": true,
+    "urgent": false,
+    "question": "Help prepare questions for a GP about the recorded pattern.",
+    "facts": {
+      "period": "15 Oct\u201311 Nov 2026",
+      "day_average_sbp": 136,
+      "day_average_dbp": 82.9,
+      "night_average_sbp": 128,
+      "night_average_dbp": 78,
+      "previous_week_night_average_sbp": 128,
+      "recent_nights_with_data": 7,
+      "total_nights": 7,
+      "night_samples": 28,
+      "sleep_window_source": "23:00\u201307:00 (fictional diary)",
+      "clinical_interpretation": "Not validated. These are fictional patterns, not diagnoses.",
+      "night_sbp_week_change": 0
+    },
+    "coverage_sufficient_for_demo": true,
+    "activity": null,
+    "approved_lifestyle_suggestions": [
+      "If comfortable and in line with existing clinician advice, consider a small, achievable movement break. Do not suggest activity in response to urgent symptoms.",
+      "Discuss a suitable activity plan and other lifestyle options with your healthcare professional.",
+      "Keep a simple diary of sleep times, symptoms and relevant context to discuss alongside the readings."
+    ],
+    "limitations": [
+      "No diagnosis, treatment recommendation or causal link can be established from this demo.",
+      "Heart-rate peaks are not an activity measure; Hilo resting readings cannot establish exercise behaviour.",
+      "The sleep window is a fictional diary entry, not inferred sleep staging.",
+      "Wearable patterns may need confirmation with a clinician; do not change medicines based on this summary."
+    ]
+  },
+  "quiet-week:lifestyle": {
+    "synthetic": true,
+    "urgent": false,
+    "question": "Offer cautious general lifestyle ideas, using activity context only if explicitly available.",
+    "facts": {
+      "period": "15 Oct\u201311 Nov 2026",
+      "day_average_sbp": 136,
+      "day_average_dbp": 82.9,
+      "night_average_sbp": 128,
+      "night_average_dbp": 78,
+      "previous_week_night_average_sbp": 128,
+      "recent_nights_with_data": 7,
+      "total_nights": 7,
+      "night_samples": 28,
+      "sleep_window_source": "23:00\u201307:00 (fictional diary)",
+      "clinical_interpretation": "Not validated. These are fictional patterns, not diagnoses.",
+      "night_sbp_week_change": 0
+    },
+    "coverage_sufficient_for_demo": true,
+    "activity": null,
+    "approved_lifestyle_suggestions": [
+      "If comfortable and in line with existing clinician advice, consider a small, achievable movement break. Do not suggest activity in response to urgent symptoms.",
+      "Discuss a suitable activity plan and other lifestyle options with your healthcare professional.",
+      "Keep a simple diary of sleep times, symptoms and relevant context to discuss alongside the readings."
+    ],
+    "limitations": [
+      "No diagnosis, treatment recommendation or causal link can be established from this demo.",
+      "Heart-rate peaks are not an activity measure; Hilo resting readings cannot establish exercise behaviour.",
+      "The sleep window is a fictional diary entry, not inferred sleep staging.",
+      "Wearable patterns may need confirmation with a clinician; do not change medicines based on this summary."
+    ]
+  },
+  "quiet-week:summary-activity": {
+    "synthetic": true,
+    "urgent": false,
+    "question": "Summarise the available blood-pressure pattern and uncertainty.",
+    "facts": {
+      "period": "15 Oct\u201311 Nov 2026",
+      "day_average_sbp": 136,
+      "day_average_dbp": 82.9,
+      "night_average_sbp": 128,
+      "night_average_dbp": 78,
+      "previous_week_night_average_sbp": 128,
+      "recent_nights_with_data": 7,
+      "total_nights": 7,
+      "night_samples": 28,
+      "sleep_window_source": "23:00\u201307:00 (fictional diary)",
+      "clinical_interpretation": "Not validated. These are fictional patterns, not diagnoses.",
+      "night_sbp_week_change": 0
+    },
+    "coverage_sufficient_for_demo": true,
+    "activity": {
+      "source": "Simulated connected activity feed; not inferred from resting heart rate.",
+      "recent_daily_steps": 2370,
+      "previous_daily_steps": 6175,
+      "recent_daily_active_minutes": 13
+    },
+    "approved_lifestyle_suggestions": [
+      "If comfortable and in line with existing clinician advice, consider a small, achievable movement break. Do not suggest activity in response to urgent symptoms.",
+      "Discuss a suitable activity plan and other lifestyle options with your healthcare professional.",
+      "Keep a simple diary of sleep times, symptoms and relevant context to discuss alongside the readings."
+    ],
+    "limitations": [
+      "No diagnosis, treatment recommendation or causal link can be established from this demo.",
+      "Heart-rate peaks are not an activity measure; Hilo resting readings cannot establish exercise behaviour.",
+      "The sleep window is a fictional diary entry, not inferred sleep staging.",
+      "Wearable patterns may need confirmation with a clinician; do not change medicines based on this summary."
+    ]
+  },
+  "quiet-week:gp-activity": {
+    "synthetic": true,
+    "urgent": false,
+    "question": "Help prepare questions for a GP about the recorded pattern.",
+    "facts": {
+      "period": "15 Oct\u201311 Nov 2026",
+      "day_average_sbp": 136,
+      "day_average_dbp": 82.9,
+      "night_average_sbp": 128,
+      "night_average_dbp": 78,
+      "previous_week_night_average_sbp": 128,
+      "recent_nights_with_data": 7,
+      "total_nights": 7,
+      "night_samples": 28,
+      "sleep_window_source": "23:00\u201307:00 (fictional diary)",
+      "clinical_interpretation": "Not validated. These are fictional patterns, not diagnoses.",
+      "night_sbp_week_change": 0
+    },
+    "coverage_sufficient_for_demo": true,
+    "activity": {
+      "source": "Simulated connected activity feed; not inferred from resting heart rate.",
+      "recent_daily_steps": 2370,
+      "previous_daily_steps": 6175,
+      "recent_daily_active_minutes": 13
+    },
+    "approved_lifestyle_suggestions": [
+      "If comfortable and in line with existing clinician advice, consider a small, achievable movement break. Do not suggest activity in response to urgent symptoms.",
+      "Discuss a suitable activity plan and other lifestyle options with your healthcare professional.",
+      "Keep a simple diary of sleep times, symptoms and relevant context to discuss alongside the readings."
+    ],
+    "limitations": [
+      "No diagnosis, treatment recommendation or causal link can be established from this demo.",
+      "Heart-rate peaks are not an activity measure; Hilo resting readings cannot establish exercise behaviour.",
+      "The sleep window is a fictional diary entry, not inferred sleep staging.",
+      "Wearable patterns may need confirmation with a clinician; do not change medicines based on this summary."
+    ]
+  },
+  "quiet-week:lifestyle-activity": {
+    "synthetic": true,
+    "urgent": false,
+    "question": "Offer cautious general lifestyle ideas, using activity context only if explicitly available.",
+    "facts": {
+      "period": "15 Oct\u201311 Nov 2026",
+      "day_average_sbp": 136,
+      "day_average_dbp": 82.9,
+      "night_average_sbp": 128,
+      "night_average_dbp": 78,
+      "previous_week_night_average_sbp": 128,
+      "recent_nights_with_data": 7,
+      "total_nights": 7,
+      "night_samples": 28,
+      "sleep_window_source": "23:00\u201307:00 (fictional diary)",
+      "clinical_interpretation": "Not validated. These are fictional patterns, not diagnoses.",
+      "night_sbp_week_change": 0
+    },
+    "coverage_sufficient_for_demo": true,
+    "activity": {
+      "source": "Simulated connected activity feed; not inferred from resting heart rate.",
+      "recent_daily_steps": 2370,
+      "previous_daily_steps": 6175,
+      "recent_daily_active_minutes": 13
+    },
+    "approved_lifestyle_suggestions": [
+      "If comfortable and in line with existing clinician advice, consider a small, achievable movement break. Do not suggest activity in response to urgent symptoms.",
+      "Discuss a suitable activity plan and other lifestyle options with your healthcare professional.",
+      "Keep a simple diary of sleep times, symptoms and relevant context to discuss alongside the readings."
+    ],
+    "limitations": [
+      "No diagnosis, treatment recommendation or causal link can be established from this demo.",
+      "Heart-rate peaks are not an activity measure; Hilo resting readings cannot establish exercise behaviour.",
+      "The sleep window is a fictional diary entry, not inferred sleep staging.",
+      "Wearable patterns may need confirmation with a clinician; do not change medicines based on this summary."
+    ]
+  },
+  "steadier:summary": {
+    "synthetic": true,
+    "urgent": false,
+    "question": "Summarise the available blood-pressure pattern and uncertainty.",
+    "facts": {
+      "period": "15 Oct\u201311 Nov 2026",
+      "day_average_sbp": 131.1,
+      "day_average_dbp": 80,
+      "night_average_sbp": 121.9,
+      "night_average_dbp": 74.3,
+      "previous_week_night_average_sbp": 122.6,
+      "recent_nights_with_data": 7,
+      "total_nights": 7,
+      "night_samples": 28,
+      "sleep_window_source": "23:00\u201307:00 (fictional diary)",
+      "clinical_interpretation": "Not validated. These are fictional patterns, not diagnoses.",
+      "night_sbp_week_change": -0.7
+    },
+    "coverage_sufficient_for_demo": true,
+    "activity": null,
+    "approved_lifestyle_suggestions": [
+      "If comfortable and in line with existing clinician advice, consider a small, achievable movement break. Do not suggest activity in response to urgent symptoms.",
+      "Discuss a suitable activity plan and other lifestyle options with your healthcare professional.",
+      "Keep a simple diary of sleep times, symptoms and relevant context to discuss alongside the readings."
+    ],
+    "limitations": [
+      "No diagnosis, treatment recommendation or causal link can be established from this demo.",
+      "Heart-rate peaks are not an activity measure; Hilo resting readings cannot establish exercise behaviour.",
+      "The sleep window is a fictional diary entry, not inferred sleep staging.",
+      "Wearable patterns may need confirmation with a clinician; do not change medicines based on this summary."
+    ]
+  },
+  "steadier:gp": {
+    "synthetic": true,
+    "urgent": false,
+    "question": "Help prepare questions for a GP about the recorded pattern.",
+    "facts": {
+      "period": "15 Oct\u201311 Nov 2026",
+      "day_average_sbp": 131.1,
+      "day_average_dbp": 80,
+      "night_average_sbp": 121.9,
+      "night_average_dbp": 74.3,
+      "previous_week_night_average_sbp": 122.6,
+      "recent_nights_with_data": 7,
+      "total_nights": 7,
+      "night_samples": 28,
+      "sleep_window_source": "23:00\u201307:00 (fictional diary)",
+      "clinical_interpretation": "Not validated. These are fictional patterns, not diagnoses.",
+      "night_sbp_week_change": -0.7
+    },
+    "coverage_sufficient_for_demo": true,
+    "activity": null,
+    "approved_lifestyle_suggestions": [
+      "If comfortable and in line with existing clinician advice, consider a small, achievable movement break. Do not suggest activity in response to urgent symptoms.",
+      "Discuss a suitable activity plan and other lifestyle options with your healthcare professional.",
+      "Keep a simple diary of sleep times, symptoms and relevant context to discuss alongside the readings."
+    ],
+    "limitations": [
+      "No diagnosis, treatment recommendation or causal link can be established from this demo.",
+      "Heart-rate peaks are not an activity measure; Hilo resting readings cannot establish exercise behaviour.",
+      "The sleep window is a fictional diary entry, not inferred sleep staging.",
+      "Wearable patterns may need confirmation with a clinician; do not change medicines based on this summary."
+    ]
+  },
+  "steadier:lifestyle": {
+    "synthetic": true,
+    "urgent": false,
+    "question": "Offer cautious general lifestyle ideas, using activity context only if explicitly available.",
+    "facts": {
+      "period": "15 Oct\u201311 Nov 2026",
+      "day_average_sbp": 131.1,
+      "day_average_dbp": 80,
+      "night_average_sbp": 121.9,
+      "night_average_dbp": 74.3,
+      "previous_week_night_average_sbp": 122.6,
+      "recent_nights_with_data": 7,
+      "total_nights": 7,
+      "night_samples": 28,
+      "sleep_window_source": "23:00\u201307:00 (fictional diary)",
+      "clinical_interpretation": "Not validated. These are fictional patterns, not diagnoses.",
+      "night_sbp_week_change": -0.7
+    },
+    "coverage_sufficient_for_demo": true,
+    "activity": null,
+    "approved_lifestyle_suggestions": [
+      "If comfortable and in line with existing clinician advice, consider a small, achievable movement break. Do not suggest activity in response to urgent symptoms.",
+      "Discuss a suitable activity plan and other lifestyle options with your healthcare professional.",
+      "Keep a simple diary of sleep times, symptoms and relevant context to discuss alongside the readings."
+    ],
+    "limitations": [
+      "No diagnosis, treatment recommendation or causal link can be established from this demo.",
+      "Heart-rate peaks are not an activity measure; Hilo resting readings cannot establish exercise behaviour.",
+      "The sleep window is a fictional diary entry, not inferred sleep staging.",
+      "Wearable patterns may need confirmation with a clinician; do not change medicines based on this summary."
+    ]
+  },
+  "steadier:summary-activity": {
+    "synthetic": true,
+    "urgent": false,
+    "question": "Summarise the available blood-pressure pattern and uncertainty.",
+    "facts": {
+      "period": "15 Oct\u201311 Nov 2026",
+      "day_average_sbp": 131.1,
+      "day_average_dbp": 80,
+      "night_average_sbp": 121.9,
+      "night_average_dbp": 74.3,
+      "previous_week_night_average_sbp": 122.6,
+      "recent_nights_with_data": 7,
+      "total_nights": 7,
+      "night_samples": 28,
+      "sleep_window_source": "23:00\u201307:00 (fictional diary)",
+      "clinical_interpretation": "Not validated. These are fictional patterns, not diagnoses.",
+      "night_sbp_week_change": -0.7
+    },
+    "coverage_sufficient_for_demo": true,
+    "activity": {
+      "source": "Simulated connected activity feed; not inferred from resting heart rate.",
+      "recent_daily_steps": 6170,
+      "previous_daily_steps": 6175,
+      "recent_daily_active_minutes": 31
+    },
+    "approved_lifestyle_suggestions": [
+      "If comfortable and in line with existing clinician advice, consider a small, achievable movement break. Do not suggest activity in response to urgent symptoms.",
+      "Discuss a suitable activity plan and other lifestyle options with your healthcare professional.",
+      "Keep a simple diary of sleep times, symptoms and relevant context to discuss alongside the readings."
+    ],
+    "limitations": [
+      "No diagnosis, treatment recommendation or causal link can be established from this demo.",
+      "Heart-rate peaks are not an activity measure; Hilo resting readings cannot establish exercise behaviour.",
+      "The sleep window is a fictional diary entry, not inferred sleep staging.",
+      "Wearable patterns may need confirmation with a clinician; do not change medicines based on this summary."
+    ]
+  },
+  "steadier:gp-activity": {
+    "synthetic": true,
+    "urgent": false,
+    "question": "Help prepare questions for a GP about the recorded pattern.",
+    "facts": {
+      "period": "15 Oct\u201311 Nov 2026",
+      "day_average_sbp": 131.1,
+      "day_average_dbp": 80,
+      "night_average_sbp": 121.9,
+      "night_average_dbp": 74.3,
+      "previous_week_night_average_sbp": 122.6,
+      "recent_nights_with_data": 7,
+      "total_nights": 7,
+      "night_samples": 28,
+      "sleep_window_source": "23:00\u201307:00 (fictional diary)",
+      "clinical_interpretation": "Not validated. These are fictional patterns, not diagnoses.",
+      "night_sbp_week_change": -0.7
+    },
+    "coverage_sufficient_for_demo": true,
+    "activity": {
+      "source": "Simulated connected activity feed; not inferred from resting heart rate.",
+      "recent_daily_steps": 6170,
+      "previous_daily_steps": 6175,
+      "recent_daily_active_minutes": 31
+    },
+    "approved_lifestyle_suggestions": [
+      "If comfortable and in line with existing clinician advice, consider a small, achievable movement break. Do not suggest activity in response to urgent symptoms.",
+      "Discuss a suitable activity plan and other lifestyle options with your healthcare professional.",
+      "Keep a simple diary of sleep times, symptoms and relevant context to discuss alongside the readings."
+    ],
+    "limitations": [
+      "No diagnosis, treatment recommendation or causal link can be established from this demo.",
+      "Heart-rate peaks are not an activity measure; Hilo resting readings cannot establish exercise behaviour.",
+      "The sleep window is a fictional diary entry, not inferred sleep staging.",
+      "Wearable patterns may need confirmation with a clinician; do not change medicines based on this summary."
+    ]
+  },
+  "steadier:lifestyle-activity": {
+    "synthetic": true,
+    "urgent": false,
+    "question": "Offer cautious general lifestyle ideas, using activity context only if explicitly available.",
+    "facts": {
+      "period": "15 Oct\u201311 Nov 2026",
+      "day_average_sbp": 131.1,
+      "day_average_dbp": 80,
+      "night_average_sbp": 121.9,
+      "night_average_dbp": 74.3,
+      "previous_week_night_average_sbp": 122.6,
+      "recent_nights_with_data": 7,
+      "total_nights": 7,
+      "night_samples": 28,
+      "sleep_window_source": "23:00\u201307:00 (fictional diary)",
+      "clinical_interpretation": "Not validated. These are fictional patterns, not diagnoses.",
+      "night_sbp_week_change": -0.7
+    },
+    "coverage_sufficient_for_demo": true,
+    "activity": {
+      "source": "Simulated connected activity feed; not inferred from resting heart rate.",
+      "recent_daily_steps": 6170,
+      "previous_daily_steps": 6175,
+      "recent_daily_active_minutes": 31
+    },
+    "approved_lifestyle_suggestions": [
+      "If comfortable and in line with existing clinician advice, consider a small, achievable movement break. Do not suggest activity in response to urgent symptoms.",
+      "Discuss a suitable activity plan and other lifestyle options with your healthcare professional.",
+      "Keep a simple diary of sleep times, symptoms and relevant context to discuss alongside the readings."
+    ],
+    "limitations": [
+      "No diagnosis, treatment recommendation or causal link can be established from this demo.",
+      "Heart-rate peaks are not an activity measure; Hilo resting readings cannot establish exercise behaviour.",
+      "The sleep window is a fictional diary entry, not inferred sleep staging.",
+      "Wearable patterns may need confirmation with a clinician; do not change medicines based on this summary."
+    ]
+  },
+  "limited:summary": {
+    "synthetic": true,
+    "urgent": false,
+    "question": "Summarise the available blood-pressure pattern and uncertainty.",
+    "facts": {
+      "period": "15 Oct\u201311 Nov 2026",
+      "day_average_sbp": 134,
+      "day_average_dbp": 81.9,
+      "night_average_sbp": 129,
+      "night_average_dbp": 79,
+      "previous_week_night_average_sbp": 128.5,
+      "recent_nights_with_data": 1,
+      "total_nights": 7,
+      "night_samples": 4,
+      "sleep_window_source": "23:00\u201307:00 (fictional diary)",
+      "clinical_interpretation": "Not validated. These are fictional patterns, not diagnoses.",
+      "night_sbp_week_change": 0.5
+    },
+    "coverage_sufficient_for_demo": false,
+    "activity": null,
+    "approved_lifestyle_suggestions": [
+      "If comfortable and in line with existing clinician advice, consider a small, achievable movement break. Do not suggest activity in response to urgent symptoms.",
+      "Discuss a suitable activity plan and other lifestyle options with your healthcare professional.",
+      "Keep a simple diary of sleep times, symptoms and relevant context to discuss alongside the readings."
+    ],
+    "limitations": [
+      "No diagnosis, treatment recommendation or causal link can be established from this demo.",
+      "Heart-rate peaks are not an activity measure; Hilo resting readings cannot establish exercise behaviour.",
+      "The sleep window is a fictional diary entry, not inferred sleep staging.",
+      "Wearable patterns may need confirmation with a clinician; do not change medicines based on this summary."
+    ]
+  },
+  "limited:gp": {
+    "synthetic": true,
+    "urgent": false,
+    "question": "Help prepare questions for a GP about the recorded pattern.",
+    "facts": {
+      "period": "15 Oct\u201311 Nov 2026",
+      "day_average_sbp": 134,
+      "day_average_dbp": 81.9,
+      "night_average_sbp": 129,
+      "night_average_dbp": 79,
+      "previous_week_night_average_sbp": 128.5,
+      "recent_nights_with_data": 1,
+      "total_nights": 7,
+      "night_samples": 4,
+      "sleep_window_source": "23:00\u201307:00 (fictional diary)",
+      "clinical_interpretation": "Not validated. These are fictional patterns, not diagnoses.",
+      "night_sbp_week_change": 0.5
+    },
+    "coverage_sufficient_for_demo": false,
+    "activity": null,
+    "approved_lifestyle_suggestions": [
+      "If comfortable and in line with existing clinician advice, consider a small, achievable movement break. Do not suggest activity in response to urgent symptoms.",
+      "Discuss a suitable activity plan and other lifestyle options with your healthcare professional.",
+      "Keep a simple diary of sleep times, symptoms and relevant context to discuss alongside the readings."
+    ],
+    "limitations": [
+      "No diagnosis, treatment recommendation or causal link can be established from this demo.",
+      "Heart-rate peaks are not an activity measure; Hilo resting readings cannot establish exercise behaviour.",
+      "The sleep window is a fictional diary entry, not inferred sleep staging.",
+      "Wearable patterns may need confirmation with a clinician; do not change medicines based on this summary."
+    ]
+  },
+  "limited:lifestyle": {
+    "synthetic": true,
+    "urgent": false,
+    "question": "Offer cautious general lifestyle ideas, using activity context only if explicitly available.",
+    "facts": {
+      "period": "15 Oct\u201311 Nov 2026",
+      "day_average_sbp": 134,
+      "day_average_dbp": 81.9,
+      "night_average_sbp": 129,
+      "night_average_dbp": 79,
+      "previous_week_night_average_sbp": 128.5,
+      "recent_nights_with_data": 1,
+      "total_nights": 7,
+      "night_samples": 4,
+      "sleep_window_source": "23:00\u201307:00 (fictional diary)",
+      "clinical_interpretation": "Not validated. These are fictional patterns, not diagnoses.",
+      "night_sbp_week_change": 0.5
+    },
+    "coverage_sufficient_for_demo": false,
+    "activity": null,
+    "approved_lifestyle_suggestions": [
+      "If comfortable and in line with existing clinician advice, consider a small, achievable movement break. Do not suggest activity in response to urgent symptoms.",
+      "Discuss a suitable activity plan and other lifestyle options with your healthcare professional.",
+      "Keep a simple diary of sleep times, symptoms and relevant context to discuss alongside the readings."
+    ],
+    "limitations": [
+      "No diagnosis, treatment recommendation or causal link can be established from this demo.",
+      "Heart-rate peaks are not an activity measure; Hilo resting readings cannot establish exercise behaviour.",
+      "The sleep window is a fictional diary entry, not inferred sleep staging.",
+      "Wearable patterns may need confirmation with a clinician; do not change medicines based on this summary."
+    ]
+  },
+  "limited:summary-activity": {
+    "synthetic": true,
+    "urgent": false,
+    "question": "Summarise the available blood-pressure pattern and uncertainty.",
+    "facts": {
+      "period": "15 Oct\u201311 Nov 2026",
+      "day_average_sbp": 134,
+      "day_average_dbp": 81.9,
+      "night_average_sbp": 129,
+      "night_average_dbp": 79,
+      "previous_week_night_average_sbp": 128.5,
+      "recent_nights_with_data": 1,
+      "total_nights": 7,
+      "night_samples": 4,
+      "sleep_window_source": "23:00\u201307:00 (fictional diary)",
+      "clinical_interpretation": "Not validated. These are fictional patterns, not diagnoses.",
+      "night_sbp_week_change": 0.5
+    },
+    "coverage_sufficient_for_demo": false,
+    "activity": {
+      "source": "Simulated connected activity feed; not inferred from resting heart rate.",
+      "recent_daily_steps": 6170,
+      "previous_daily_steps": 6175,
+      "recent_daily_active_minutes": 31
+    },
+    "approved_lifestyle_suggestions": [
+      "If comfortable and in line with existing clinician advice, consider a small, achievable movement break. Do not suggest activity in response to urgent symptoms.",
+      "Discuss a suitable activity plan and other lifestyle options with your healthcare professional.",
+      "Keep a simple diary of sleep times, symptoms and relevant context to discuss alongside the readings."
+    ],
+    "limitations": [
+      "No diagnosis, treatment recommendation or causal link can be established from this demo.",
+      "Heart-rate peaks are not an activity measure; Hilo resting readings cannot establish exercise behaviour.",
+      "The sleep window is a fictional diary entry, not inferred sleep staging.",
+      "Wearable patterns may need confirmation with a clinician; do not change medicines based on this summary."
+    ]
+  },
+  "limited:gp-activity": {
+    "synthetic": true,
+    "urgent": false,
+    "question": "Help prepare questions for a GP about the recorded pattern.",
+    "facts": {
+      "period": "15 Oct\u201311 Nov 2026",
+      "day_average_sbp": 134,
+      "day_average_dbp": 81.9,
+      "night_average_sbp": 129,
+      "night_average_dbp": 79,
+      "previous_week_night_average_sbp": 128.5,
+      "recent_nights_with_data": 1,
+      "total_nights": 7,
+      "night_samples": 4,
+      "sleep_window_source": "23:00\u201307:00 (fictional diary)",
+      "clinical_interpretation": "Not validated. These are fictional patterns, not diagnoses.",
+      "night_sbp_week_change": 0.5
+    },
+    "coverage_sufficient_for_demo": false,
+    "activity": {
+      "source": "Simulated connected activity feed; not inferred from resting heart rate.",
+      "recent_daily_steps": 6170,
+      "previous_daily_steps": 6175,
+      "recent_daily_active_minutes": 31
+    },
+    "approved_lifestyle_suggestions": [
+      "If comfortable and in line with existing clinician advice, consider a small, achievable movement break. Do not suggest activity in response to urgent symptoms.",
+      "Discuss a suitable activity plan and other lifestyle options with your healthcare professional.",
+      "Keep a simple diary of sleep times, symptoms and relevant context to discuss alongside the readings."
+    ],
+    "limitations": [
+      "No diagnosis, treatment recommendation or causal link can be established from this demo.",
+      "Heart-rate peaks are not an activity measure; Hilo resting readings cannot establish exercise behaviour.",
+      "The sleep window is a fictional diary entry, not inferred sleep staging.",
+      "Wearable patterns may need confirmation with a clinician; do not change medicines based on this summary."
+    ]
+  },
+  "limited:lifestyle-activity": {
+    "synthetic": true,
+    "urgent": false,
+    "question": "Offer cautious general lifestyle ideas, using activity context only if explicitly available.",
+    "facts": {
+      "period": "15 Oct\u201311 Nov 2026",
+      "day_average_sbp": 134,
+      "day_average_dbp": 81.9,
+      "night_average_sbp": 129,
+      "night_average_dbp": 79,
+      "previous_week_night_average_sbp": 128.5,
+      "recent_nights_with_data": 1,
+      "total_nights": 7,
+      "night_samples": 4,
+      "sleep_window_source": "23:00\u201307:00 (fictional diary)",
+      "clinical_interpretation": "Not validated. These are fictional patterns, not diagnoses.",
+      "night_sbp_week_change": 0.5
+    },
+    "coverage_sufficient_for_demo": false,
+    "activity": {
+      "source": "Simulated connected activity feed; not inferred from resting heart rate.",
+      "recent_daily_steps": 6170,
+      "previous_daily_steps": 6175,
+      "recent_daily_active_minutes": 31
+    },
+    "approved_lifestyle_suggestions": [
+      "If comfortable and in line with existing clinician advice, consider a small, achievable movement break. Do not suggest activity in response to urgent symptoms.",
+      "Discuss a suitable activity plan and other lifestyle options with your healthcare professional.",
+      "Keep a simple diary of sleep times, symptoms and relevant context to discuss alongside the readings."
+    ],
+    "limitations": [
+      "No diagnosis, treatment recommendation or causal link can be established from this demo.",
+      "Heart-rate peaks are not an activity measure; Hilo resting readings cannot establish exercise behaviour.",
+      "The sleep window is a fictional diary entry, not inferred sleep staging.",
+      "Wearable patterns may need confirmation with a clinician; do not change medicines based on this summary."
+    ]
+  }
+}

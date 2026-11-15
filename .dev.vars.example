@@ -1,0 +1,4 @@
+# Optional LOCAL use only. Copy to .dev.vars and keep it untracked.
+# ANTHROPIC_API_KEY=
+# AI_ENABLED_UNTIL=0
+# Set a future Unix timestamp in milliseconds only when deliberately enabling AI.

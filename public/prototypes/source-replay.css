@@ -1,0 +1,268 @@
+.replay {
+  --replay-ink: #253858;
+  border: 1px solid #d0d4da;
+  border-radius: 8px;
+  background: #fff;
+  color: var(--replay-ink);
+  overflow: hidden;
+  font:
+    14px/1.6 Arial,
+    sans-serif;
+}
+.replay-toolbar {
+  padding: 16px 20px;
+  background: #f5f6f8;
+  border-bottom: 1px solid #d0d4da;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.replay-toolbar label {
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0;
+}
+.replay-toolbar select {
+  max-width: 100%;
+  min-height: 44px;
+  padding: 9px 30px 9px 10px;
+  border: 1px solid #8993a4;
+  background: white;
+  color: #253858;
+  border-radius: 4px;
+  margin-left: 10px;
+  font:
+    13px Arial,
+    sans-serif;
+}
+.replay-tools {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.replay-tools button {
+  border: 1px solid #8993a4;
+  background: white;
+  color: #253858;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 7px 12px;
+  font:
+    12px Arial,
+    sans-serif;
+}
+.replay-tools .hot-toggle[aria-pressed="true"] {
+  background: #deebff;
+}
+.replay-status {
+  padding: 10px 20px;
+  font-size: 11px;
+  background: #fff8e9;
+  border-bottom: 1px solid #e9d6aa;
+}
+.replay-scroll {
+  overflow: auto;
+  max-height: 780px;
+  overscroll-behavior: contain;
+  background: #e8ebef;
+  scrollbar-gutter: stable;
+}
+.source-stage {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  background: white;
+  min-height: 100px;
+}
+.source-stage > img {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: auto;
+}
+.source-hotspot {
+  position: absolute !important;
+  padding: 0 !important;
+  border: 2px solid transparent !important;
+  border-radius: 3px !important;
+  background: transparent !important;
+  min-height: 0 !important;
+  cursor: pointer !important;
+  margin: 0 !important;
+  color: transparent !important;
+  z-index: 1;
+}
+.source-hotspot:hover,
+.source-hotspot:focus-visible,
+.show-zones .source-hotspot {
+  border-color: #005ce6 !important;
+  background: #005ce615 !important;
+  outline-offset: 2px !important;
+}
+.source-hotspot:hover:after,
+.source-hotspot:focus-visible:after {
+  content: attr(aria-label);
+  position: absolute;
+  bottom: calc(100% + 3px);
+  left: 0;
+  min-width: 120px;
+  max-width: 250px;
+  background: #172b4d;
+  color: white;
+  font:
+    12px/1.4 Arial,
+    sans-serif;
+  padding: 6px 10px;
+  pointer-events: none;
+  box-shadow: 0 3px 10px #0002;
+}
+.source-hotspot:first-of-type:hover:after {
+  bottom: auto;
+  top: 100%;
+}
+.replay-caption {
+  padding: 18px 20px;
+  border-top: 1px solid #d0d4da;
+}
+.replay-caption p {
+  font-size: 12px;
+  max-width: 850px;
+  margin: 0 0 12px;
+}
+.replay-links {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.replay-links button {
+  border: 1px solid #b5bec9;
+  background: #f7f8fa;
+  min-height: 44px;
+  padding: 8px 13px;
+  font:
+    12px Arial,
+    sans-serif;
+  color: #253858;
+}
+.replay details {
+  border: 0;
+  margin: 15px 0 0;
+  padding: 0;
+  max-width: none;
+}
+.replay summary {
+  font-size: 12px;
+  cursor: pointer;
+}
+.replay details p {
+  white-space: pre-line;
+  margin-top: 12px;
+}
+.replay a {
+  font-size: 11px;
+  text-decoration: underline;
+}
+.replay button:focus-visible,
+.replay select:focus-visible {
+  outline: 3px solid #005ce6;
+  outline-offset: 2px;
+}
+.replay-dialog {
+  font:
+    14px/1.6 Arial,
+    sans-serif;
+  background: #fff;
+  color: #253858;
+  border: 1px solid #8993a4;
+  border-radius: 8px;
+  width: calc(100% - 30px);
+  max-width: 650px;
+  max-height: 85vh;
+  overflow: auto;
+  padding: 28px;
+}
+.replay-dialog h2 {
+  font-size: 27px;
+  line-height: 1.2;
+  letter-spacing: -0.7px;
+}
+.replay-dialog > button {
+  float: right;
+  border: 1px solid #8993a4;
+  padding: 10px 14px;
+  background: white;
+  color: #253858;
+  min-height: 44px;
+}
+.replay-dialog p {
+  font-size: 13px;
+}
+.replay-dialog::backdrop {
+  background: #172b4d99;
+}
+.replay-dialog form {
+  display: grid;
+  gap: 15px;
+}
+.replay-dialog label {
+  font-size: 12px;
+}
+.replay-dialog input {
+  display: block;
+  width: 100%;
+  min-height: 44px;
+  margin-top: 6px;
+  padding: 10px;
+  border: 1px solid #8993a4;
+  background: #e1efd9;
+  color: #172b4d;
+  font:
+    14px Arial,
+    sans-serif;
+}
+.replay-dialog .primary {
+  padding: 12px 17px;
+  border: 0;
+  background: #005ce6;
+  color: white;
+  min-height: 44px;
+}
+.source-led-note {
+  padding: 18px 22px;
+  background: #f4efe7;
+  border-left: 3px solid #917958;
+  font-size: 12px;
+}
+.source-led-note p {
+  margin: 0;
+  max-width: 900px;
+}
+@media (max-width: 600px) {
+  .replay-toolbar {
+    padding: 12px;
+  }
+  .replay-toolbar label {
+    width: 100%;
+  }
+  .replay-toolbar select {
+    display: block;
+    width: 100%;
+    margin: 7px 0 0;
+  }
+  .replay-scroll {
+    max-height: 580px;
+  }
+  .replay-caption,
+  .replay-status {
+    padding: 14px;
+  }
+  .replay-links button {
+    flex: 1 1 130px;
+  }
+  .replay-tools {
+    gap: 5px;
+  }
+}

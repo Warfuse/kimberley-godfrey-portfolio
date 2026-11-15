@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Nevis Range — 3D map explorer</title>
+    <link rel="stylesheet" href="lab.css" />
+    <script type="module" src="nevis.js"></script>
+  </head>
+  <body class="map-shell">
+    <header class="lab-top">
+      <a target="_top" href="../index.html#project-nevis">← My portfolio</a
+      ><span class="tag">Nevis Range / Interactive 3D concept</span>
+    </header>
+    <div class="demo-notice">
+      I used my historical map artwork for this 3D preview. Relief heights,
+      route overlays and camera paths are illustrative, not GPS or surveyed
+      terrain. Not for route navigation.
+    </div>
+    <main class="wrap">
+      <div class="map-title">
+        <div>
+          <p class="eyebrow">MY NEVIS RANGE MAPS / INTERACTIVE PREVIEW</p>
+          <h1>I redesigned<br /><i>the trail maps.</i></h1>
+        </div>
+        <p>
+          I added a 3D preview of my map artwork. Drag to orbit, use + / − to
+          zoom, or try the fly-through.
+        </p>
+      </div>
+      <section
+        class="map-view"
+        id="map-view"
+        aria-label="Interactive Nevis map"
+      >
+        <div class="map-tools">
+          <button id="fly" aria-pressed="false">▶ Fly through</button
+          ><button id="reset-view">↺ Reset view</button
+          ><button id="zoom-in" aria-label="Zoom in">＋</button
+          ><button id="zoom-out" aria-label="Zoom out">−</button
+          ><button id="top-view">Top view</button
+          ><label
+            ><span class="hide">Explore a route</span
+            ><select id="route" aria-label="Explore a route">
+              <option value="world">World Cup Downhill</option>
+              <option value="blue">Blue Doon</option>
+              <option value="forest">Lower Forest</option>
+            </select></label
+          ><button id="map-motion" aria-pressed="false">Motion: off</button
+          ><button id="wire" aria-pressed="false">Relief grid</button>
+        </div>
+        <div class="map-loading" id="map-status" role="status">
+          Preparing the landscape…
+        </div>
+        <div id="map-fallback" class="map-fallback" hidden>
+          <div>
+            <img
+              src="../assets/nevis-hi.jpg"
+              alt="Original Nevis Range trail map"
+            />
+            <p>
+              3D is unavailable in this browser. The original map remains
+              available below.
+            </p>
+          </div>
+        </div>
+        <div class="map-route">
+          <p class="eyebrow">SELECTED JOURNEY</p>
+          <strong id="route-name">World Cup Downhill</strong>
+          <p id="route-note">Orange / Extreme · Illustrative overlay</p>
+          <p id="flight-status" aria-live="polite">Ready when you are.</p>
+        </div>
+        <div class="map-caption">
+          <span>DRAG TO ORBIT · PINCH TO ZOOM · ARROW KEYS TO ROTATE</span
+          ><span>ILLUSTRATIVE RELIEF / HISTORICAL ARTWORK</span>
+        </div>
+        <div class="fly-progress" id="flight-progress"></div>
+      </section>
+      <div class="map-legend">
+        <span>Green / Easy</span><span>Blue / Moderate</span
+        ><span>Red / Difficult</span><span>Black / Severe</span
+        ><span>Orange / Extreme</span>
+      </div>
+      <p class="subtle">
+        I used the map artwork from my portfolio as the texture. Added 3D
+        landform and highlighted paths are a new creative interpretation. Names
+        and grades come from the source; overlay positions are approximate.
+        Nevis Range’s trail area is on Aonach Mòr, near Ben Nevis.
+      </p>
+      <section class="map-in-situ" id="in-situ">
+        <p class="eyebrow">FROM SCREEN TO REAL-WORLD SCALE</p>
+        <h2>I designed maps<br />for signs and print.</h2>
+        <p>
+          I used these concept mockups to show how the maps could appear on a
+          trailhead sign and a flyer.
+        </p>
+        <img
+          src="../assets/nevis-in-situ.png"
+          alt="AI-generated concept showing Nevis map artwork on a timber trailhead sign with a Highland mountain backdrop, and on a folded flyer"
+          loading="lazy"
+        />
+        <p class="map-mockup-notice">
+          AI-generated in-situ concept, not a photograph of an actual
+          installation. Highland backdrop inspired by the Ben Nevis region; not
+          a verified viewpoint. Small labels in the generated mockup may differ
+          from the original map. The source artwork is shown below.
+        </p>
+      </section>
+      <section class="map-original">
+        <a href="../assets/nevis-hi.jpg" target="_blank"
+          ><img
+            src="../assets/nevis-hi.jpg"
+            alt="Original supplied Nevis trail map with full legend"
+          /><span>Open the original artwork at full resolution ↗</span></a
+        >
+        <div class="card">
+          <p class="eyebrow">THE DESIGN THREAD</p>
+          <h2>Recognition,<br />before decoration.</h2>
+          <p>
+            I used matching numbers, names, colours and grade symbols across the
+            maps and trail signs.
+          </p>
+          <p>
+            I included the original flat artwork so the full key and overview
+            remain available alongside the 3D preview.
+          </p>
+          <a
+            href="https://amaplan.com/assets/portfolio-source.pdf#page=35"
+            target="_blank"
+            >Read my original case study ↗</a
+          >
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

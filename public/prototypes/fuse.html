@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Fuse — Interactive brand playground</title>
+    <link rel="stylesheet" href="lab.css" />
+    <script src="fuse.js" defer></script>
+  </head>
+  <body class="fuse-shell">
+    <header class="lab-top">
+      <a target="_top" href="../index.html#project-fuse">← My portfolio</a
+      ><span class="tag">Fuse Growth Studio / Brand playground</span>
+    </header>
+    <div class="demo-notice">
+      I built this preview using my documented palette and voice. The supplied
+      original vector symbol and wordmark are used throughout. Layouts and
+      example copy are new portfolio compositions.
+    </div>
+    <main class="wrap">
+      <p class="eyebrow">MY FUSE BRAND SYSTEM</p>
+      <h1>Make a little<br />momentum.</h1>
+      <p>
+        I defined the logo, colour, typography and voice. Try different
+        applications below.
+      </p>
+      <div class="fuse-layout">
+        <aside class="fuse-controls">
+          <h2>Put the brand to work.</h2>
+          <div>
+            <label>01 / Pick your energy</label>
+            <div
+              class="swatches"
+              id="swatches"
+              aria-label="Brand background colours"
+            ></div>
+          </div>
+          <div>
+            <label for="ink">02 / Text colour</label
+            ><select id="ink">
+              <option value="#ffffff">White</option>
+              <option value="#111824">Dark ink</option>
+            </select>
+          </div>
+          <div>
+            <label for="tone">03 / Tone of voice</label
+            ><select id="tone">
+              <option value="human">Be a human</option>
+              <option value="intelligent">Be intelligent</option>
+              <option value="curious">Be curious</option>
+            </select>
+          </div>
+          <div>
+            <label for="format">04 / Canvas</label
+            ><select id="format">
+              <option value="poster">Campaign poster</option>
+              <option value="card">Business card</option>
+              <option value="proposal">Proposal cover</option>
+            </select>
+          </div>
+          <div>
+            <label for="headline">05 / Make it yours</label
+            ><input
+              type="text"
+              id="headline"
+              maxlength="80"
+              placeholder="Try your own headline"
+              aria-describedby="headline-help"
+            /><small id="headline-help"
+              >Up to 80 characters. Stays on this device.</small
+            >
+          </div>
+          <div class="contrast-note" id="contrast" aria-live="polite"></div>
+        </aside>
+        <div>
+          <section
+            class="fuse-stage"
+            id="stage"
+            aria-label="Live brand composition"
+            data-format="poster"
+          >
+            <div
+              class="fuse-word"
+              role="img"
+              aria-label="Fuse Growth Studio — original vector logo"
+            ></div>
+            <div>
+              <p class="eyebrow" id="stage-kicker">
+                GROWTH STARTS WITH A CONVERSATION
+              </p>
+              <h2 id="stage-title">Good people.<br />Great momentum.</h2>
+              <p id="stage-copy">
+                Less fluff. More progress. Let’s work out what moves your
+                business forward.
+              </p>
+            </div>
+            <div class="stage-footer">
+              <span>FUSE GROWTH STUDIO</span
+              ><span id="format-label">BE A HUMAN ↗</span>
+            </div>
+          </section>
+          <div class="fuse-actions">
+            <button class="primary" id="export">
+              Download composition SVG ↓</button
+            ><button id="reset-fuse">Reset the playground</button>
+          </div>
+          <p class="subtle" style="color: #b8c4da; margin-top: 15px">
+            Original vector logo. New example copy and layouts. Downloads are
+            portfolio compositions, not master brand templates.
+          </p>
+        </div>
+      </div>
+      <section class="fuse-source">
+        <img
+          src="../assets/fuse-wordmark.svg"
+          alt="Original Fuse Growth Studio vector logo"
+        />
+        <div>
+          <p class="eyebrow">THE ORIGINAL CRAFT</p>
+          <h2>I documented how<br />to use the identity.</h2>
+          <p>
+            I created 45 pages of guidelines covering logo spacing, colour,
+            typography, tone and applications. I built this preview to
+            demonstrate those choices.
+          </p>
+          <p>
+            Contrast feedback is calculated for the selected text and background
+            using relative luminance. It checks the chosen pairing, not the full
+            page or original guidelines.
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

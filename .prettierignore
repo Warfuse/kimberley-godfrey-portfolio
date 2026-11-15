@@ -1,0 +1,7 @@
+node_modules/
+.wrangler/
+public/prototypes/vendor/
+package-lock.json
+public/assets/
+public/hilo/assets/
+docs/images/
