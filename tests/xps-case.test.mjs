@@ -26,6 +26,11 @@ assert.equal(current.stage, "preparing");
 assert.equal(caseSummary(current).step, 2);
 current = transition(current, { type: "READY" });
 assert.equal(current.stage, "ready");
+assert.equal(
+  caseSummary(current).step,
+  4,
+  "terminal state completes all four milestones",
+);
 assert.equal(caseSummary(current).owner, "You");
 assert.equal(current.events.length, 5);
 assert.throws(() => transition(current, { type: "ACCEPT" }));

@@ -52,7 +52,8 @@ export const stages = Object.freeze({
     label: "Your sample update is ready",
     owner: "You",
     tone: "complete",
-    step: 3,
+    // All four milestones are complete; none remains the current step.
+    step: 4,
     memberTitle: "You can review the next steps.",
     memberText:
       "The sample request has reached its final demo step. Open the example update to see a clear record of what happened. This is not a pension quotation.",
