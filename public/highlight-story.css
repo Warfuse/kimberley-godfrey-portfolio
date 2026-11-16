@@ -1,0 +1,97 @@
+/* Application-specific lead story; the base portfolio remains the neutral route. */
+[data-featured-story][hidden],
+[data-other-concepts][hidden] {
+  display: none;
+}
+html[data-highlight] .intro h1 {
+  font-size: clamp(40px, 4.3vw, 70px);
+}
+.highlight-preview img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  object-position: center;
+  margin: 0 0 24px;
+  border-radius: 5px;
+}
+.highlight-preview strong {
+  font-family: inherit;
+  font-size: 22px;
+  letter-spacing: -0.5px;
+  margin: 0 0 12px;
+}
+.highlight-preview small {
+  font-size: 10px;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+}
+[data-highlight="hilo"] .highlight-preview {
+  background: #fff;
+}
+[data-highlight="fuse"] .highlight-preview {
+  background: #49e3ad;
+}
+.other-concepts {
+  display: grid;
+  gap: 22px;
+  margin-top: 35px;
+}
+.concept-project {
+  display: grid;
+  grid-template-columns: minmax(150px, 0.5fr) 1fr;
+  gap: 35px;
+  align-items: center;
+  padding: 30px;
+  background: #f8f6f0;
+  border: 1px solid #bfc6b8;
+  border-radius: 8px;
+}
+.concept-project img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+}
+.concept-project h3 {
+  font-size: 30px;
+  letter-spacing: -0.7px;
+  margin: 9px 0;
+}
+.concept-project p {
+  max-width: 620px;
+  margin: 0 0 10px;
+}
+.concept-project small {
+  display: block;
+  color: #455440;
+}
+.concept-action {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.concept-project:hover .concept-action {
+  text-decoration-thickness: 2px;
+}
+@media (max-width: 650px) {
+  html[data-highlight] .intro h1 {
+    font-size: 43px;
+  }
+  .concept-project {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 24px;
+  }
+  .concept-project img {
+    max-height: 160px;
+  }
+  .concept-project h3 {
+    font-size: 26px;
+  }
+  .concept-project p {
+    font-size: 13px;
+  }
+  .highlight-preview img {
+    height: 180px;
+  }
+}

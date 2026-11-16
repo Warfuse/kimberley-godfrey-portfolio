@@ -52,3 +52,5 @@ Official artwork used in the career section to identify employers, with the comp
 - Braze: https://www.braze.com/_next/static/media/logo.3zj52cl9b-j-1.png (official site header). Black wordmark with transparency.
 - Nevis Range: https://www.nevisrange.co.uk/wp-content/themes/nevis-range-wp/images/nr-new-logo2.png (official site header background image). Full supplied logo proportions preserved.
   Independent work and the combined earlier-roles entry retain their text labels rather than implying a single company identity.
+
+- `assets/hilo-preview.png`: screenshot of this portfolio’s independent Hilo prototype, copied from the repository’s existing documentation image. Used as the application-highlight and project-list preview; all visible health data is fictional.

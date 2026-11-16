@@ -25,6 +25,8 @@ The Hilo concept has its own brand context in `public/hilo/hilo.css`, with local
 - **CV action:** direct download and a separate PDF view link; do not route it through an account or form.
 - **Hilo guide:** non-blocking scenario → explanation → summary prompts with dismiss/restart controls. A failed AI call offers an explicitly prewritten sample.
 
+- **Application highlight:** `public/highlights.mjs` is the shared content and route registry; `public/highlight-story.mjs` renders it. `public/highlight-story.css` extends the existing visual system. Keep first-person copy, a direct working-prototype link and accurate status. Unfeatured concepts remain with the work; unavailable entries use the neutral portfolio.
+
 ## Accessibility and motion
 
 Use semantic links for navigation and buttons for actions. Keep visible focus, descriptive labels, headings and captions. Do not rely on colour alone for map routes or state. Respect `prefers-reduced-motion` and the portfolio motion toggle; keep keyboard controls available for visual interactions. Avoid adding essential information only on hover.

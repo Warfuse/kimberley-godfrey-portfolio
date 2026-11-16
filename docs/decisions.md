@@ -37,3 +37,9 @@ These records describe the current implementation, rather than a fabricated hist
 **Problem:** a public portfolio repo should not give pull requests access to hosting credentials or accidentally spend an owner's API budget.
 
 **Decision:** run read-only CI checks without secrets. Keep production configuration local and require an explicit deploy. Default clones disable AI. **Tradeoff:** publishing is a deliberate owner action rather than an automatic push-to-deploy workflow.
+
+## 07 · Tailor the lead story with a shareable URL
+
+**Problem:** Kim needs to emphasise relevant work for different applications without maintaining separate copies of her portfolio.
+
+**Decision:** use allowlisted query keys and one shared story registry. The URL controls the opening copy and feature, while the rest of the work remains available. Hilo moves into the normal work list when another story leads. **Tradeoff:** a not-yet-built XPS entry falls back to the general portfolio until a real prototype is ready. No cookies or arbitrary query-generated content are needed.

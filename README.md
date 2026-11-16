@@ -31,6 +31,10 @@ If you are reviewing my work, the live portfolio is the quickest route. In this 
 
 The historic work and the new portfolio interactions are distinguished throughout. I do not claim unverified business metrics or treat a reconstructed prototype as a shipped product.
 
+## Tailor the opening story
+
+Use `?hilo`, `?royal`, `?braze`, `?capital`, `?fuse` or `?nevis` to lead with a specific project. Unfeatured Hilo remains in the work list. The general link stays neutral. [Application links and adding XPS](docs/application-links.md) explain the configuration; XPS remains unavailable until its prototype is built.
+
 ## Run locally
 
 Requires **Node.js 22 or 24** and npm. No Cloudflare account or API key is needed to explore the portfolio and prewritten Hilo summary.

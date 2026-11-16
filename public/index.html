@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="ai-workflow.css" />
     <link rel="stylesheet" href="career.css" />
+    <link rel="stylesheet" href="highlight-story.css" />
+    <script type="module" src="highlight-story.mjs"></script>
     <script src="app.js" defer></script>
     <script src="ai-approach.js" defer></script>
   </head>
@@ -123,11 +125,16 @@
           ><span>PRODUCT / UX / VISUAL DESIGN</span>
         </div>
       </section>
-      <section class="hilo-feature" id="hilo-concept">
+      <section
+        class="hilo-feature"
+        id="featured-story"
+        data-featured-story
+        hidden
+      >
         <div>
           <p class="eyebrow">NEW EXPLORATION / AN INDEPENDENT IDEA FOR HILO</p>
           <h2>I designed AI summaries<br /><em>for GP conversations.</em></h2>
-          <p>
+          <p data-feature-summary>
             I explored how Hilo could explain a repeated blood-pressure change
             and help someone prepare questions for a GP. I built a working
             prototype with fictional histories and AI-generated summaries.
@@ -268,6 +275,17 @@
             >
           </button>
         </div>
+        <div
+          class="other-concepts"
+          data-other-concepts
+          aria-label="My independent product concepts"
+          hidden
+        ></div>
+        <noscript
+          ><p>
+            <a href="hilo/">Explore my independent Hilo concept ↗</a>
+          </p></noscript
+        >
         <p class="work-foot">
           Pick a project to see my role, design decisions and results.
           <span></span>

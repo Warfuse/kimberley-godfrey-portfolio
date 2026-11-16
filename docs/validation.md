@@ -24,3 +24,7 @@ The deployed portfolio was checked at desktop and mobile widths, including caree
 ## Not claimed
 
 No formal WCAG audit, representative user study, production penetration test, clinical validation or verified conversion/revenue improvement is claimed. Original source-image resolution limits remain; individual high-resolution Braze exports are preferred over enlarged montage thumbnails.
+
+## Application-specific highlights · 16 November 2026
+
+Local browser checks covered `?hilo`, `?royal`, the neutral link and the unavailable `?xps` fallback. The selected headline survives refresh; opening/closing a client case study and returning from the Hilo preview preserve the application query. Hilo remains in the work list when another story leads. Desktop 1280px and mobile 390px checks found no horizontal overflow or broken images; no console errors were observed. Direct links to dynamically added concept cards restore their anchor after layout. No production deployment was made for this review.
