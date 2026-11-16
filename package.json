@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Kimberley Godfrey’s product design portfolio: original work, interactive prototypes and a bounded fictional-data Hilo concept.",
+  "description": "Kimberley Godfrey’s UI and experience design portfolio: original work, interactive prototypes and a bounded fictional-data Hilo concept.",
   "license": "UNLICENSED",
   "engines": {
     "node": ">=22 <25"

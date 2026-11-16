@@ -28,7 +28,7 @@ if (story) {
   primary.textContent = story.action;
   const note = hero.querySelector(".tiny-note");
   note.textContent = `Kimberley Godfrey · ${story.status}`;
-  document.title = `${story.name} · Kimberley Godfrey — Product Design`;
+  document.title = `${story.name} · Kimberley Godfrey — Senior User Interface and Experience Designer`;
   document.querySelector('meta[name="description"]').content = story.summary;
 
   feature.hidden = false;

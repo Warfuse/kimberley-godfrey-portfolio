@@ -1,4 +1,4 @@
-# Kimberley Godfrey · Product design portfolio
+# Kimberley Godfrey · UI and experience design portfolio
 
 [![Portfolio checks](https://github.com/Warfuse/kimberley-godfrey-portfolio/actions/workflows/ci.yml/badge.svg)](https://github.com/Warfuse/kimberley-godfrey-portfolio/actions/workflows/ci.yml)
 
