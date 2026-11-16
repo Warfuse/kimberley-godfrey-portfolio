@@ -26,4 +26,4 @@ Formal WCAG conformance, real screen-reader validation, user research, identity 
 
 ## Release scope
 
-This is local work for portfolio review. No changes to the live website, DNS or paid AI service are required or authorised by this build.
+I first built and reviewed this locally, then deployed it with owner approval on 16 November 2026. The live `?xps` link leads with XPS and keeps Hilo in the work list. The `?hilo` link does the reverse. The live member-to-administrator path reached the final state with all four progress milestones complete. Both domain names preserve the query and route to HTTPS. The existing CV downloads and Hilo connection remained available; no new AI generation was needed for these checks.

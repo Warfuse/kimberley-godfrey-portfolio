@@ -13,7 +13,7 @@ The URL chooses the lead story without changing everyone else's portfolio. No lo
 | `https://amaplan.com/?fuse`    | Fuse brand system                           |
 | `https://amaplan.com/?nevis`   | Nevis maps and wayfinding                   |
 
-These routes describe the implemented local change. They take effect on the live domain only after deployment. Use the same query on localhost to review them first.
+I deployed these application links on 16 November 2026. Use the same query on localhost to review later changes before publishing.
 
 The selected story changes the headline, introductory copy, main action, featured preview and document title. The rest of Kim's career and work stays accessible. Hilo appears with the work whenever it is not the headline feature. Available independent concepts are not duplicated in both places.
 

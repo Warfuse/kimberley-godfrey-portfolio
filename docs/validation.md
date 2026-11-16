@@ -28,3 +28,7 @@ No formal WCAG audit, representative user study, production penetration test, cl
 ## Application-specific highlights · 16 November 2026
 
 Local browser checks covered `?hilo`, `?royal`, the neutral link and the unavailable `?xps` fallback. The selected headline survives refresh; opening/closing a client case study and returning from the Hilo preview preserve the application query. Hilo remains in the work list when another story leads. Desktop 1280px and mobile 390px checks found no horizontal overflow or broken images; no console errors were observed. Direct links to dynamically added concept cards restore their anchor after layout. No production deployment was made for this review.
+
+## XPS and application-link release · 16 November 2026
+
+I deployed the reviewed XPS prototype, final-milestone fix and application-specific opening stories. Live checks covered both domains, HTTP-to-HTTPS redirects, preserved query parameters, both highlight variants and the complete XPS request flow. The complete progress state has four completed milestones and no remaining current milestone. Website-only CV/portfolio PDFs were retained in the release staging area outside this public repo. Existing Hilo AI availability was checked without making a new generation request.

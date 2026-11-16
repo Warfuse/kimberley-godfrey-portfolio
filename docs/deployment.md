@@ -23,8 +23,9 @@ npm run build
 1. Authenticate to the intended Cloudflare account with `npx wrangler login`.
 2. Copy `wrangler.production.example.jsonc` to the ignored `wrangler.production.jsonc`. Review Worker name, allowed hosts in `src/worker.js`, domain routes, bindings, model, data version and expiry. Add your account ID if needed. The example deliberately disables AI; do not reset an existing paid service's expiry by accident.
 3. For the existing live Worker, preserve its current secret, Durable Object migration and data-version settings. Do not install a new key if the existing encrypted secret is still intended. For a new deployment, enter the provider key using the private prompt from `npx wrangler secret put ANTHROPIC_API_KEY --config wrangler.production.jsonc`.
-4. Run `npx wrangler deploy --config wrangler.production.jsonc --dry-run`.
-5. Publish only after reviewing the diff: `npx wrangler deploy --config wrangler.production.jsonc`.
-6. Check HTTP/HTTPS apex and www, preserved Hilo paths/query, same-origin embedded previews, CV and assets, keyboard/motion/mobile behaviour, and AI availability. Never test with real health data.
+4. Prepare a fresh release directory outside Git, combining `public/` with the owner-managed CV and full portfolio PDF already hosted on the website. Those PDFs are intentionally absent from this repo: deploying the trimmed `public/` alone would remove the website downloads. Point the production configuration’s `assets.directory` at the complete release directory, retain the same source/bindings and compare the document bytes before publishing. Never add the full PDFs to public Git history.
+5. Run `npx wrangler deploy --config wrangler.production.jsonc --dry-run`.
+6. Publish only after reviewing the diff: `npx wrangler deploy --config wrangler.production.jsonc`.
+7. Check HTTP/HTTPS apex and www, preserved Hilo paths/query, same-origin embedded previews, CV and assets, keyboard/motion/mobile behaviour, and AI availability. Never test with real health data.
 
 The public source contains no account identifier, active production expiry, key or DNS backup. The live deployment configuration is managed separately. Roll back with Wrangler's version/rollback tools if verification fails; repository ownership changes do not migrate hosting.
