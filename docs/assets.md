@@ -54,3 +54,9 @@ Official artwork used in the career section to identify employers, with the comp
   Independent work and the combined earlier-roles entry retain their text labels rather than implying a single company identity.
 
 - `assets/hilo-preview.png`: screenshot of this portfolio’s independent Hilo prototype, copied from the repository’s existing documentation image. Used as the application-highlight and project-list preview; all visible health data is fictional.
+
+## My independent XPS concept · 16 November 2026
+
+- `xps/assets/xps-logo.svg`: unchanged official XPS Group logo from https://www.xpsgroup.com/application/images/logo.svg. Used to identify the independent concept; the mark remains XPS’s property and does not imply endorsement.
+- `xps/assets/preview.png`: screenshot of my working local prototype, showing fictional case details. This is newly designed portfolio UI, not a screenshot of an XPS member platform.
+- Public brand palette observed in https://www.xpsgroup.com/application/themes/design_portfolio/css/theme.css. Gotham is not redistributed; the concept reuses the bundled Inter font under its existing SIL OFL notice.

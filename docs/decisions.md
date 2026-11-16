@@ -42,4 +42,8 @@ These records describe the current implementation, rather than a fabricated hist
 
 **Problem:** Kim needs to emphasise relevant work for different applications without maintaining separate copies of her portfolio.
 
-**Decision:** use allowlisted query keys and one shared story registry. The URL controls the opening copy and feature, while the rest of the work remains available. Hilo moves into the normal work list when another story leads. **Tradeoff:** a not-yet-built XPS entry falls back to the general portfolio until a real prototype is ready. No cookies or arbitrary query-generated content are needed.
+**Decision:** use allowlisted query keys and one shared story registry. The URL controls the opening copy and feature, while the rest of the work remains available. Hilo moves into the normal work list when another story leads. **Tradeoff:** unavailable entries fall back to the general portfolio; the working XPS concept now has its own route. No cookies or arbitrary query-generated content are needed.
+
+## 08 · My XPS connected request
+
+I designed one fictional member-to-administrator handoff with a shared case model, sample-only submission and a correction loop. My reasoning, XPS brand reference and proposed research are documented in `docs/xps/`. I use deterministic state transitions rather than introducing AI or financial calculations into this task.

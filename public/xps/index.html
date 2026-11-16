@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>XPS concept · Kimberley Godfrey — Product Design</title>
+    <meta
+      name="description"
+      content="I designed a connected retirement-request preview for members and administrators. An independent XPS portfolio concept using fictional data."
+    />
+    <link rel="icon" href="../assets/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="xps.css" />
+    <script type="module" src="xps.mjs"></script>
+  </head>
+  <body>
+    <a class="skip" href="#demo">Skip to the working prototype</a>
+    <div class="concept-strip">
+      <span>MY INDEPENDENT CONCEPT FOR XPS</span
+      ><a href="../?xps">← My portfolio</a>
+    </div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="XPS concept home"
+        ><img
+          src="assets/xps-logo.svg"
+          width="150"
+          height="49"
+          alt="XPS Group"
+        /><span>/ my design exploration</span></a
+      >
+      <nav aria-label="Concept navigation">
+        <a href="#demo">Try the demo</a><a href="#decisions">My decisions</a>
+      </nav>
+    </header>
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div>
+          <p class="eyebrow">PENSION ADMINISTRATION / A CONNECTED SERVICE</p>
+          <h1 id="hero-title">
+            I designed a clearer<br /><span>retirement request.</span>
+          </h1>
+          <p class="lead">
+            I connected a member’s next step to the administrator’s review, so
+            both can see what is needed and who acts next.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#demo"
+              >Try the 90-second demo <span aria-hidden="true">↗</span></a
+            ><a class="text-link" href="#decisions"
+              >Why I designed it this way ↓</a
+            >
+          </div>
+          <a class="author" href="#decisions"
+            ><img src="../assets/kim.png" width="45" height="45" alt="" /><span
+              ><small>MY DESIGN EXPLORATION</small
+              ><strong>Kimberley Godfrey</strong></span
+            ><span aria-hidden="true">↗</span></a
+          >
+        </div>
+        <div
+          class="hero-visual"
+          aria-label="One request, two connected perspectives"
+        >
+          <div class="visual-top">
+            <span class="live-dot"></span> ONE REQUEST. TWO PERSPECTIVES.
+          </div>
+          <div class="perspective-card person">
+            <span class="avatar">AM</span>
+            <div>
+              <small>MEMBER</small><strong>What do I need to do?</strong>
+              <p>A clear task, with help at hand.</p>
+            </div>
+          </div>
+          <div class="connection-line" aria-hidden="true">
+            <span>↓</span><span>Shared status · clear ownership</span
+            ><span>↑</span>
+          </div>
+          <div class="perspective-card team">
+            <span class="avatar">↗</span>
+            <div>
+              <small>ADMINISTRATOR</small
+              ><strong>What needs my attention?</strong>
+              <p>The same case, ready to review.</p>
+            </div>
+          </div>
+          <div class="visual-bottom">
+            <span>01 · Understand</span><span>02 · Act</span
+            ><span>03 · Stay informed</span>
+          </div>
+        </div>
+      </section>
+      <div class="independence">
+        I created this independently for my portfolio. XPS has not commissioned
+        or endorsed it. All people, documents and case details below are
+        fictional.
+      </div>
+      <section class="demo-section" id="demo" aria-labelledby="demo-heading">
+        <div class="section-title">
+          <div>
+            <p class="eyebrow">TRY THE WORKING PROTOTYPE</p>
+            <h2 id="demo-heading">One task. Both sides of the service.</h2>
+            <p>
+              Start as the member. Send a sample, then switch perspectives to
+              review it.
+            </p>
+          </div>
+          <button class="reset" id="reset">↺ Restart demo</button>
+        </div>
+        <div class="demo-guide" id="guide">
+          <span class="guide-index" id="guide-index">01</span>
+          <div>
+            <strong id="guide-title">Start with the member’s next step.</strong>
+            <p id="guide-text">
+              Use a supplied sample to try the address-confirmation task.
+            </p>
+          </div>
+          <span class="guide-arrow" aria-hidden="true">↘</span>
+        </div>
+        <div class="app-shell">
+          <div class="app-toolbar">
+            <div class="app-name">
+              <span class="service-icon" aria-hidden="true">↗</span>
+              <div>
+                <strong>Retirement request</strong
+                ><small>EXAMPLE PENSION SCHEME</small>
+              </div>
+            </div>
+            <div class="mode-switch">
+              <span id="perspective-label">Switch demo perspective</span>
+              <div role="tablist" aria-labelledby="perspective-label">
+                <button
+                  role="tab"
+                  id="member-tab"
+                  aria-selected="true"
+                  aria-controls="case-view"
+                  data-view="member"
+                >
+                  Member</button
+                ><button
+                  role="tab"
+                  id="admin-tab"
+                  aria-selected="false"
+                  aria-controls="case-view"
+                  tabindex="-1"
+                  data-view="admin"
+                >
+                  Administrator <span id="admin-count" hidden>1</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="fixture-note">
+            <span
+              ><span class="fixture-dot" aria-hidden="true"></span> FICTIONAL
+              CASE · DEMO-1042</span
+            ><span>No sign-in or real documents needed</span>
+          </div>
+          <div
+            id="case-view"
+            role="tabpanel"
+            aria-labelledby="member-tab"
+            tabindex="0"
+          ></div>
+          <div class="app-footer">
+            <span>Sample data only. Nothing is submitted to XPS.</span
+            ><button id="help-open">
+              Need help with this step? <span aria-hidden="true">↗</span>
+            </button>
+          </div>
+        </div>
+        <p class="demo-caption">
+          I use one shared case state for both views. Switching perspective
+          changes what you can do, while the request’s status stays consistent.
+        </p>
+      </section>
+      <section
+        class="decisions"
+        id="decisions"
+        aria-labelledby="decisions-heading"
+      >
+        <div class="section-title">
+          <div>
+            <p class="eyebrow">MY ROLE / MY REASONING / WHAT I WOULD TEST</p>
+            <h2 id="decisions-heading">I focused on the handoff.</h2>
+            <p>
+              I designed and built this interaction to explore one question: can
+              I make a pension request easier to follow for the member and the
+              team handling it?
+            </p>
+          </div>
+        </div>
+        <div class="decision-grid">
+          <article>
+            <span>01 / THE PROBLEM I EXPLORED</span>
+            <h3>I made the next action explicit.</h3>
+            <p>
+              I put the task, its reason and who acts next together. I kept
+              progress visible without inventing a completion date or service
+              promise.
+            </p>
+          </article>
+          <article>
+            <span>02 / THE PATTERN I REUSED</span>
+            <h3>I connected the two views.</h3>
+            <p>
+              I use the same status and history in both perspectives. The
+              administrator’s action updates the member’s explanation, rather
+              than creating a separate version of the truth.
+            </p>
+          </article>
+          <article>
+            <span>03 / THE CHOICE I KEPT</span>
+            <h3>I kept help alongside the task.</h3>
+            <p>
+              I used plain language, labelled controls, visible keyboard focus
+              and a route to human support. I kept the task manageable without
+              hiding important context.
+            </p>
+          </article>
+          <article>
+            <span>04 / THE RESULT I WOULD TEST</span>
+            <h3>I would measure understanding.</h3>
+            <p>
+              I would test whether people can identify the next action, complete
+              the sample task and explain what happens afterwards. Fewer
+              incomplete submissions and status enquiries are hypotheses, not
+              measured results.
+            </p>
+          </article>
+        </div>
+        <details class="research">
+          <summary>My assumptions and how I would validate them</summary>
+          <div>
+            <p>
+              I based this exploration on the role’s focus on members,
+              administrators, accessibility and consistent patterns, alongside
+              XPS’s public administration materials. I have not inspected its
+              private platforms or established that this journey is missing.
+            </p>
+            <p>
+              I would first confirm the real quotation journey, evidence
+              requirements and escalation routes with administrators and
+              compliance specialists. I would then test with members with varied
+              digital confidence and access needs, including keyboard and
+              screen-reader users.
+            </p>
+            <p>
+              The address-check step, statuses and sample review rules are
+              design fixtures. They are not XPS policy, an identity check, a
+              real quotation or financial advice.
+            </p>
+          </div>
+        </details>
+        <div class="source-links">
+          <span>MY PUBLIC REFERENCES</span
+          ><a
+            href="https://www.xpsgroup.com/what-we-do/administration/"
+            target="_blank"
+            rel="noopener"
+            >XPS administration ↗</a
+          ><a
+            href="https://www.xpsgroup.com/news-views/insights-briefings/digital-transformation-enhancing-customer-experience-retirement-solutions-market/"
+            target="_blank"
+            rel="noopener"
+            >Member experience ↗</a
+          ><a
+            href="https://www.xpsgroup.com/news-views/insights-briefings/putting-admin-technology-under-looking-glass/"
+            target="_blank"
+            rel="noopener"
+            >Administration technology ↗</a
+          >
+        </div>
+      </section>
+    </main>
+    <footer>
+      <a href="../?xps">← Back to my portfolio</a
+      ><span>AN INDEPENDENT IDEA FOR XPS / KIMBERLEY GODFREY</span
+      ><button id="motion" aria-pressed="false">Reduce motion</button>
+    </footer>
+    <dialog id="help-dialog" aria-labelledby="help-title">
+      <button
+        class="dialog-close"
+        data-close="help-dialog"
+        aria-label="Close help"
+      >
+        ×
+      </button>
+      <p class="eyebrow">ANOTHER WAY TO CONTINUE</p>
+      <h2 id="help-title">You can ask for help.</h2>
+      <p>
+        You do not have to complete a pension request online. Your scheme’s
+        administration team can explain the next step and discuss a suitable way
+        to provide information.
+      </p>
+      <div class="help-option">
+        <strong>Keep your case reference to hand</strong
+        ><span>DEMO-1042 · fictional example</span>
+      </div>
+      <p class="small">
+        This portfolio demo does not place calls, send messages or provide
+        scheme-specific contact details.
+      </p>
+      <button class="button primary" data-close="help-dialog">
+        Back to the request
+      </button>
+    </dialog>
+    <dialog id="update-dialog" aria-labelledby="update-title">
+      <button
+        class="dialog-close"
+        data-close="update-dialog"
+        aria-label="Close sample update"
+      >
+        ×
+      </button>
+      <p class="eyebrow">FICTIONAL EXAMPLE / NOT A QUOTATION</p>
+      <h2 id="update-title">Your request, explained.</h2>
+      <div id="update-content"></div>
+      <p class="small">
+        No pension values, eligibility decisions or recommendations are supplied
+        in this demo.
+      </p>
+      <button class="button primary" id="download-update">
+        Save this sample update ↓
+      </button>
+    </dialog>
+    <p id="announcer" class="sr-only" role="status" aria-live="polite"></p>
+    <noscript
+      ><p class="independence">
+        The connected demo needs JavaScript. My design explanation and public
+        references remain available above.
+      </p></noscript
+    >
+  </body>
+</html>

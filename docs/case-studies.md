@@ -11,6 +11,10 @@ This index separates original work from interactions built for the portfolio. Th
 | Nevis Range     | Help visitors interpret routes and facilities                                        | I redesigned map and signage artwork                                                                     | Historical portfolio artwork. The new relief is schematic, with no DEM/GPS accuracy; mockups are imagined installations. |
 | Hilo            | Explore how repeated readings could lead to an understandable GP conversation        | I designed a guided fictional-data concept with AI explanation, privacy choices and conversation prompts | Working portfolio concept only. No Hilo commission, clinical validation, diagnosis or real notifications.                |
 
+## My independent XPS exploration
+
+I designed and built a connected retirement-request concept with member and administrator perspectives. A fictional sample moves through review and correction states, with a shared history and an explicit next owner. My output is a working prototype; improved understanding and fewer status enquiries remain hypotheses. I use the public XPS brand direction without claiming commission, endorsement or access to its private platforms. [My brief, reference and research plan](xps/brief.md) record the evidence and limits.
+
 ## Fidelity rules
 
 - Royal London and Braze navigation replay supplied original screens; missing source screens must not be invented as historic work.

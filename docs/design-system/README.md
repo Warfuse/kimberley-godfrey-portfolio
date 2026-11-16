@@ -27,6 +27,8 @@ The Hilo concept has its own brand context in `public/hilo/hilo.css`, with local
 
 - **Application highlight:** `public/highlights.mjs` is the shared content and route registry; `public/highlight-story.mjs` renders it. `public/highlight-story.css` extends the existing visual system. Keep first-person copy, a direct working-prototype link and accurate status. Unfeatured concepts remain with the work; unavailable entries use the neutral portfolio.
 
+- **XPS concept:** `docs/xps/design-reference.md` records my use of the official public logo and palette, accessible colour choices and connected-service patterns. `public/xps/case-model.mjs` is the one shared case model behind both views. I do not claim to implement XPS’s internal design system.
+
 ## Accessibility and motion
 
 Use semantic links for navigation and buttons for actions. Keep visible focus, descriptive labels, headings and captions. Do not rely on colour alone for map routes or state. Respect `prefers-reduced-motion` and the portfolio motion toggle; keep keyboard controls available for visual interactions. Avoid adding essential information only on hover.

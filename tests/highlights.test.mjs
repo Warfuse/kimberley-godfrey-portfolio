@@ -20,11 +20,7 @@ assert.equal(
   "hilo",
   "first recognised key wins",
 );
-assert.equal(
-  selectHighlight("?xps"),
-  null,
-  "unbuilt work must not be promoted",
-);
+assert.equal(selectHighlight("?xps"), "xps");
 assert.equal(selectHighlight("?unknown"), null);
 assert.equal(selectHighlight("?__proto__"), null);
 assert.equal(selectHighlight("?highlight=%3Cscript%3E"), null);
@@ -33,15 +29,20 @@ assert.equal(
   "hilo",
   "values cannot replace allowlisted routes",
 );
-assert.deepEqual(remainingConcepts("hilo"), []);
+assert.deepEqual(
+  remainingConcepts("hilo").map(([key]) => key),
+  ["xps"],
+);
 assert.deepEqual(
   remainingConcepts("royal").map(([key]) => key),
-  ["hilo"],
+  ["hilo", "xps"],
 );
 assert.deepEqual(
   remainingConcepts(null).map(([key]) => key),
-  ["hilo"],
+  ["hilo", "xps"],
 );
+const unavailable = { ...highlights, xps: { ...highlights.xps, ready: false } };
+assert.equal(selectHighlight("?xps", unavailable), null);
 const future = {
   ...highlights,
   xps: {
@@ -63,12 +64,12 @@ assert.deepEqual(
 );
 for (const [key, item] of Object.entries(highlights)) {
   if (!isReady(item)) continue;
-  assert.match(item.href, /^(?:hilo\/|prototypes\/[a-z-]+\.html)$/);
+  assert.match(item.href, /^(?:(?:hilo|xps)\/|prototypes\/[a-z-]+\.html)$/);
   assert.equal(item.title.length, 2);
   assert.ok(item.status && item.image && item.imageAlt && item.summary, key);
 }
 console.log(
-  "Highlight routing, safe fallbacks, query injection boundaries and future XPS promotion passed.",
+  "Highlight routing, safe fallbacks, query injection boundaries and concept promotion passed.",
 );
 
 for (const item of Object.values(highlights).filter(isReady)) {

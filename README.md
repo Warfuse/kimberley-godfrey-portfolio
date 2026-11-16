@@ -33,7 +33,7 @@ The historic work and the new portfolio interactions are distinguished throughou
 
 ## Tailor the opening story
 
-Use `?hilo`, `?royal`, `?braze`, `?capital`, `?fuse` or `?nevis` to lead with a specific project. Unfeatured Hilo remains in the work list. The general link stays neutral. [Application links and adding XPS](docs/application-links.md) explain the configuration; XPS remains unavailable until its prototype is built.
+Use `?xps`, `?hilo`, `?royal`, `?braze`, `?capital`, `?fuse` or `?nevis` to lead with a specific project. Unfeatured Hilo remains in the work list. The general link stays neutral. [Application links](docs/application-links.md) explain the configuration. [My XPS brief and decisions](docs/xps/brief.md) document the connected retirement-request concept.
 
 ## Run locally
 
@@ -51,6 +51,10 @@ npm test              # arithmetic, navigation guidance, API boundaries and budg
 npm run check         # content links, source syntax, formatting and secret checks
 npm run build         # Cloudflare bundle validation; does not publish
 ```
+
+## My XPS exploration
+
+I designed a connected retirement-request concept for a fictional member and administrator. I use one shared case model, supplied sample documents and an explicit next owner. Explore it locally at `/xps/` or lead with it using `/?xps`. [My brief](docs/xps/brief.md), [shared design reference](docs/xps/design-reference.md), [decisions](docs/xps/decisions.md), [research plan](docs/xps/research-plan.md) and [validation](docs/xps/validation.md) explain the work. This is an independent idea, not an XPS commission or a real pension service.
 
 ## How I work
 

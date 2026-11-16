@@ -89,8 +89,22 @@ export const highlights = {
     imageAlt: "My historical Nevis Range mountain-bike trail map",
     action: "Explore my Nevis map ↗",
   },
-  // Reserved: keep unavailable until the real XPS prototype and copy are ready.
-  xps: { name: "XPS", ready: false },
+  xps: {
+    name: "XPS",
+    kind: "concept",
+    eyebrow: "AN INDEPENDENT IDEA FOR XPS",
+    title: ["I designed a clearer", "retirement request."],
+    summary:
+      "For my independent XPS concept, I connected a member’s next step to the administrator’s review, so both can see what is needed and who acts next. Try the working demo with fictional case details and supplied samples.",
+    caption:
+      "Follow a sample request from the member’s task to the administrator’s review, then see the update from both sides.",
+    status: "Independent concept · fictional case",
+    href: "xps/",
+    image: "xps/assets/preview.png",
+    imageAlt:
+      "My independent XPS prototype with connected member and administrator perspectives",
+    action: "Try my XPS concept ↗",
+  },
 };
 
 export function isReady(story) {

@@ -25,3 +25,7 @@ These are acceptance criteria for this implementation, not claims of measured hi
 ## Scope
 
 Selected Royal London, Braze, Express Capital, Fuse and Nevis work, plus an independent Hilo concept, career summary and CV download. No real medical records, notifications, emails, financial applications or external account actions are performed by the demos.
+
+## My independent XPS concept
+
+I extend the portfolio with a connected retirement-request exploration, using an XPS-inspired public brand direction and fictional member/administrator views. The specific brief, evidence boundaries, design reference and research plan are in `docs/xps/`. No real pension request or document is submitted.
