@@ -109,10 +109,18 @@ header {
   border-bottom: 1px solid #ffffff22;
 }
 .wordmark {
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
   font-size: 30px;
   font-weight: 600;
   letter-spacing: -1.4px;
+}
+.wordmark > img {
+  display: block;
+  width: 146px;
+  height: auto;
+  flex-shrink: 0;
 }
 .wordmark > span {
   font-size: 11px;

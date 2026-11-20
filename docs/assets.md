@@ -64,3 +64,7 @@ Official artwork used in the career section to identify employers, with the comp
 ## Airalo Wallet demonstration
 
 The twelve user-supplied JPEG captures in `public/airalo/assets/` show my use-case build, card designs and graphics on Fuse Wallet. [The source manifest](airalo/source-images.json) records original filenames and SHA-256 hashes. The images are copied unchanged; the browser frames previews and offers complete originals. Airalo and wallet platform marks retain their respective rights. The visible QR is labelled AIRALO-DEMO-001; this showcase does not supply a wallet installation or live account integration.
+
+### Official Airalo logo
+
+The header uses Airalo’s unchanged horizontal RGB Light SVG from the [official media center](https://www.airalo.com/about-us/media-center), secondary-logo download (`Airalo Logo_Horizontal_2023.02.08_RGB Light.svg`). It includes the full-colour symbol and white lettering for the dark background. The logo remains Airalo’s property and is not part of my card-design authorship claim.

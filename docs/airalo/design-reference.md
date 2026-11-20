@@ -1,6 +1,6 @@
 # My Airalo showcase design reference
 
-I use the supplied card graphics and screenshots as the single visual reference for the demo states. I do not redraw the Airalo logo or fabricate another card system.
+I use the supplied card graphics and screenshots as the single visual reference for the demo states. The header uses the unchanged official Airalo horizontal RGB Light SVG, obtained from its media center, with the colour symbol and white lettering for a dark background. I do not redraw the logo or fabricate another card system.
 
 The surrounding showcase uses Inter from the portfolio’s locally hosted font files, dark teal (`#12313c`), deep teal (`#09242c`), warm white (`#faf8f3`) and coral (`#ff8a76`). Body text uses dark ink (`#172e36`) and muted teal (`#51676d`). These tokens are defined in `public/airalo/airalo.css`.
 
