@@ -31,15 +31,15 @@ assert.equal(
 );
 assert.deepEqual(
   remainingConcepts("hilo").map(([key]) => key),
-  ["xps"],
+  ["airalo", "xps"],
 );
 assert.deepEqual(
   remainingConcepts("royal").map(([key]) => key),
-  ["hilo", "xps"],
+  ["airalo", "hilo", "xps"],
 );
 assert.deepEqual(
   remainingConcepts(null).map(([key]) => key),
-  ["hilo", "xps"],
+  ["airalo", "hilo", "xps"],
 );
 const unavailable = { ...highlights, xps: { ...highlights.xps, ready: false } };
 assert.equal(selectHighlight("?xps", unavailable), null);
@@ -56,15 +56,18 @@ const future = {
 assert.equal(selectHighlight("?xps", future), "xps");
 assert.deepEqual(
   remainingConcepts("xps", future).map(([key]) => key),
-  ["hilo"],
+  ["airalo", "hilo"],
 );
 assert.deepEqual(
   remainingConcepts("hilo", future).map(([key]) => key),
-  ["xps"],
+  ["airalo", "xps"],
 );
 for (const [key, item] of Object.entries(highlights)) {
   if (!isReady(item)) continue;
-  assert.match(item.href, /^(?:(?:hilo|xps)\/|prototypes\/[a-z-]+\.html)$/);
+  assert.match(
+    item.href,
+    /^(?:(?:airalo|hilo|xps)\/|prototypes\/[a-z-]+\.html)$/,
+  );
   assert.equal(item.title.length, 2);
   assert.ok(item.status && item.image && item.imageAlt && item.summary, key);
 }
@@ -81,3 +84,15 @@ for (const item of Object.values(highlights).filter(isReady)) {
     ),
   );
 }
+
+assert.equal(selectHighlight("?airalo"), "airalo");
+assert.deepEqual(
+  remainingConcepts("airalo").map(([key]) => key),
+  ["hilo", "xps"],
+);
+
+assert.equal(
+  highlights.airalo.updateHero,
+  false,
+  "Airalo changes only the feature, preserving Kim’s introduction",
+);

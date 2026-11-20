@@ -15,7 +15,7 @@ The URL chooses the lead story without changing everyone else's portfolio. No lo
 
 I deployed these application links on 16 November 2026. Use the same query on localhost to review later changes before publishing.
 
-The selected story changes the headline, introductory copy, main action, featured preview and document title. The rest of Kim's career and work stays accessible. Hilo appears with the work whenever it is not the headline feature. Available independent concepts are not duplicated in both places.
+Airalo changes only the featured showcase beneath my introduction: the main hero, introductory copy and portfolio title stay unchanged. Other existing application links retain their earlier headline customisation. The rest of Kim's career and work stays accessible. Hilo appears with the work whenever it is not the headline feature. Available independent concepts are not duplicated in both places.
 
 `?highlight=hilo` is an alternative spelling. Tracking parameters can coexist, for example `?utm_source=email&hilo`. If several recognised keys are supplied, the first wins. Unknown keys and unbuilt stories show the general portfolio. Only registered stories can supply text, images or destinations; URL values are never rendered as copy or used as arbitrary links.
 
@@ -24,6 +24,12 @@ The selected story changes the headline, introductory copy, main action, feature
 `?xps` leads with my independent retirement-request prototype at `/xps/`. Hilo remains in the work list. `?hilo` leads with Hilo and places XPS among the independent concepts. The neutral portfolio includes both concepts with the work.
 
 I keep XPS’s brief, shared reference, decisions, research plan and validation in `docs/xps/`. The prototype uses fictional data and supplied samples; it does not submit anything to XPS.
+
+## My Airalo showcase
+
+`https://amaplan.com/?airalo` opens with my Airalo Wallet use-case demo. Hilo and XPS appear lower among the concepts. `/airalo/` contains the seven-state replay and all twelve supplied screenshots.
+
+I created the use case, designed the cards and produced the graphics, and built the experience on Fuse Wallet. The portfolio replay uses those original captures. It does not install a pass, provision an eSIM or connect to Airalo. See [my brief and decisions](airalo/README.md).
 
 ## Add another concept
 

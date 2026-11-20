@@ -47,3 +47,7 @@ These records describe the current implementation, rather than a fabricated hist
 ## 08 · My XPS connected request
 
 I designed one fictional member-to-administrator handoff with a shared case model, sample-only submission and a correction loop. My reasoning, XPS brand reference and proposed research are documented in `docs/xps/`. I use deterministic state transitions rather than introducing AI or financial calculations into this task.
+
+## Airalo: preserve my card work and credit the platform
+
+I made the local application showcase a source-backed replay of my twelve original captures. I created the use case, card design and graphics and built the demo on Fuse Wallet. I separate that platform build from the portfolio replay, preserve the sample values, and avoid implying a commissioned Airalo launch or measured commercial results. `?airalo` promotes this work only in the featured showcase beneath my unchanged introduction, while keeping Hilo and XPS available below. See [my Airalo brief](airalo/README.md).

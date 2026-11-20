@@ -60,3 +60,7 @@ Official artwork used in the career section to identify employers, with the comp
 - `xps/assets/xps-logo.svg`: unchanged official XPS Group logo from https://www.xpsgroup.com/application/images/logo.svg. Used to identify the independent concept; the mark remains XPS’s property and does not imply endorsement.
 - `xps/assets/preview.png`: screenshot of my working local prototype, showing fictional case details. This is newly designed portfolio UI, not a screenshot of an XPS member platform.
 - Public brand palette observed in https://www.xpsgroup.com/application/themes/design_portfolio/css/theme.css. Gotham is not redistributed; the concept reuses the bundled Inter font under its existing SIL OFL notice.
+
+## Airalo Wallet demonstration
+
+The twelve user-supplied JPEG captures in `public/airalo/assets/` show my use-case build, card designs and graphics on Fuse Wallet. [The source manifest](airalo/source-images.json) records original filenames and SHA-256 hashes. The images are copied unchanged; the browser frames previews and offers complete originals. Airalo and wallet platform marks retain their respective rights. The visible QR is labelled AIRALO-DEMO-001; this showcase does not supply a wallet installation or live account integration.

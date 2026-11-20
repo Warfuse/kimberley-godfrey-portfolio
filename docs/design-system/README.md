@@ -34,3 +34,5 @@ The Hilo concept has its own brand context in `public/hilo/hilo.css`, with local
 Use semantic links for navigation and buttons for actions. Keep visible focus, descriptive labels, headings and captions. Do not rely on colour alone for map routes or state. Respect `prefers-reduced-motion` and the portfolio motion toggle; keep keyboard controls available for visual interactions. Avoid adding essential information only on hover.
 
 Review responsive changes at approximately 390px and 1280px and with zoom. Manual checks are necessary; an automated pass does not establish WCAG compliance. New tokens or component changes should update this reference and their actual CSS together.
+
+- **Airalo showcase:** [the shared reference](../airalo/design-reference.md) maps my original screenshot states to the editorial replay. The original cards remain unchanged; showcase tokens live in `public/airalo/airalo.css` and state content in `public/airalo/journey.mjs`.

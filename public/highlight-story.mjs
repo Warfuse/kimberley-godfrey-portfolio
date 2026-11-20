@@ -21,21 +21,24 @@ function title(element, lines) {
 
 if (story) {
   document.documentElement.dataset.highlight = selected;
-  title(hero.querySelector("h1"), story.title);
-  hero.querySelector(".hero-copy").textContent = story.summary;
-  const primary = hero.querySelector(".hero-actions a");
-  primary.href = story.href;
-  primary.textContent = story.action;
-  const note = hero.querySelector(".tiny-note");
-  note.textContent = `Kimberley Godfrey · ${story.status}`;
-  document.title = `${story.name} · Kimberley Godfrey — Senior User Interface and Experience Designer`;
-  document.querySelector('meta[name="description"]').content = story.summary;
+  // Airalo customises the featured showcase while preserving Kim’s introduction.
+  if (story.updateHero !== false) {
+    title(hero.querySelector("h1"), story.title);
+    hero.querySelector(".hero-copy").textContent = story.summary;
+    const primary = hero.querySelector(".hero-actions a");
+    primary.href = story.href;
+    primary.textContent = story.action;
+    const note = hero.querySelector(".tiny-note");
+    note.textContent = `Kimberley Godfrey · ${story.status}`;
+    document.title = `${story.name} · Kimberley Godfrey — Senior User Interface and Experience Designer`;
+    document.querySelector('meta[name="description"]').content = story.summary;
+  }
 
   feature.hidden = false;
   feature.querySelector(".eyebrow").textContent = story.eyebrow;
   title(feature.querySelector("h2"), [
     "Explore my",
-    `${story.name} ${story.kind === "concept" ? "concept" : "work"}.`,
+    `${story.name} ${story.displayType || (story.kind === "concept" ? "concept" : "work")}.`,
   ]);
   feature.querySelector("[data-feature-summary]").textContent = story.caption;
   const action = feature.querySelector(".pill");
@@ -71,7 +74,7 @@ for (const [key, concept] of remainingConcepts(selected)) {
   label.className = "eyebrow";
   label.textContent = concept.eyebrow;
   const heading = document.createElement("h3");
-  heading.textContent = `My ${concept.name} concept`;
+  heading.textContent = `My ${concept.name} ${concept.displayType || "concept"}`;
   const summary = document.createElement("p");
   summary.textContent = concept.caption;
   const status = document.createElement("small");

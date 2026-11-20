@@ -1,6 +1,23 @@
 // Shared copy and routes for application-specific portfolio links.
 // Add a ready entry here when a new concept has a working prototype.
 export const highlights = {
+  airalo: {
+    name: "Airalo",
+    displayType: "showcase",
+    updateHero: false,
+    kind: "concept",
+    eyebrow: "MY AIRALO APPLICATION SHOWCASE",
+    title: ["I built an Airalo", "Wallet use-case demo."],
+    summary:
+      "I created the use case, designed the cards and produced the graphics. I built the experience on Fuse Wallet, connecting a Japan trip pass to data updates, low-data reminders and top-up confirmation.",
+    caption:
+      "I created the use case, designed the cards and produced the graphics, and built the experience on Fuse Wallet. Explore the journey from ready to travel through top-up and Airmoney updates.",
+    status: "Application use-case demo · built on Fuse Wallet",
+    href: "airalo/",
+    image: "airalo/assets/ready-wallet.jpeg",
+    imageAlt: "My Airalo Japan trip-pass design built on Fuse Wallet",
+    action: "Explore my Airalo showcase ↗",
+  },
   hilo: {
     name: "Hilo",
     kind: "concept",
