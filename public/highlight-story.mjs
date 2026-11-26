@@ -4,7 +4,8 @@ import {
   remainingConcepts,
 } from "./highlights.mjs";
 
-const selected = selectHighlight(location.search);
+const uiux = new URLSearchParams(location.search).has("uiux");
+const selected = uiux ? null : selectHighlight(location.search);
 const story = highlights[selected];
 const feature = document.querySelector("[data-featured-story]");
 const hero = document.querySelector(".intro");
@@ -17,6 +18,31 @@ function title(element, lines) {
     document.createElement("br"),
     emphasis,
   );
+}
+
+if (uiux) {
+  document.documentElement.dataset.highlight = "uiux";
+  title(hero.querySelector("h1"), [
+    "I understand people.",
+    "I design for their needs.",
+  ]);
+  hero.querySelector(".hero-copy").textContent =
+    "I’m a senior UX/UI designer and user researcher in Edinburgh. I use research, behavioural insights and visual design to create clear digital experiences.";
+  document.querySelector(".hero-top .eyebrow").textContent =
+    "KIMBERLEY GODFREY · SENIOR UX/UI DESIGNER & USER RESEARCHER";
+  hero.querySelector(".tiny-note").textContent =
+    "User research · Behavioural analytics · UX/UI design";
+  document.title = "Kimberley Godfrey — Senior UX/UI Designer and User Researcher";
+  document.querySelector('meta[name="description"]').content =
+    hero.querySelector(".hero-copy").textContent;
+  document.querySelector("#toolkit").hidden = false;
+  document.querySelector("[data-uiux-link]").hidden = false;
+  document.querySelector("#quick-title em").textContent =
+    "A senior UX/UI designer and user researcher.";
+  document.querySelector("#quick-dialog > p:nth-of-type(2)").textContent =
+    "Senior UX/UI designer and user researcher · Edinburgh · UK remote";
+  document.querySelector("#contact h2 em").textContent =
+    "UX design or user research role.";
 }
 
 if (story) {
