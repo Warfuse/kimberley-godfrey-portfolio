@@ -36,3 +36,5 @@ Use semantic links for navigation and buttons for actions. Keep visible focus, d
 Review responsive changes at approximately 390px and 1280px and with zoom. Manual checks are necessary; an automated pass does not establish WCAG compliance. New tokens or component changes should update this reference and their actual CSS together.
 
 - **Airalo showcase:** [the shared reference](../airalo/design-reference.md) maps my original screenshot states to the editorial replay. The original cards remain unchanged; showcase tokens live in `public/airalo/airalo.css` and state content in `public/airalo/journey.mjs`.
+
+- **Research toolkit:** the `#toolkit` section reuses the career layout, strengths list and project link. Keep tool claims tied to documented work; label prospective tools separately. Preserve the same responsive and focus rules as the career section.
