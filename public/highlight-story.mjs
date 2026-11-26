@@ -32,7 +32,8 @@ if (uiux) {
     "KIMBERLEY GODFREY · SENIOR UX/UI DESIGNER & USER RESEARCHER";
   hero.querySelector(".tiny-note").textContent =
     "User research · Behavioural analytics · UX/UI design";
-  document.title = "Kimberley Godfrey — Senior UX/UI Designer and User Researcher";
+  document.title =
+    "Kimberley Godfrey — Senior UX/UI Designer and User Researcher";
   document.querySelector('meta[name="description"]').content =
     hero.querySelector(".hero-copy").textContent;
   document.querySelector("#toolkit").hidden = false;
